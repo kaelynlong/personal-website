@@ -1,0 +1,32 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+:root {
+    --typeHeaderPrimary: "Baskerville No 2", serif;
+    --typeHeaderFallback: serif;
+    --typeHeaderSize: 25px;
+    --typeHeaderWeight: 400;
+    --typeHeaderLineHeight: 1.4;
+    --typeHeaderSpacing: 0.025em;
+
+    --typeBasePrimary: "Baskerville No 2", serif;
+    --typeBaseFallback: serif;
+    --typeBaseSize: 16px;
+    --typeBaseWeight: 400;
+    --typeBaseLineHeight: 1.6;
+    --typeBaseSpacing: 0.05em;
+
+    --iconWeight: 5px;
+    --iconLinecaps: miter;
+}

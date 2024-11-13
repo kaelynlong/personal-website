@@ -1,0 +1,198 @@
+/* components/Navbar.css */
+
+/* General Styles */
+.navbar {
+    font-family: var(--typeBasePrimary), var(--typeBaseFallback);
+    font-size: var(--typeBaseSize);
+    line-height: var(--typeBaseLineHeight);
+    letter-spacing: var(--typeBaseSpacing);
+    background-color: white;
+    color: #1C1D1D;
+    text-align: center;
+    width: 100%;
+    position: relative;
+}
+
+/* Announcement Bar */
+.announcement-bar {
+    background-color: #1C1D1D;
+    color: #fff;
+    padding: 0.5rem 0;
+}
+
+/* Navbar Content */
+.navbar-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3.4rem 8vw;
+    position: relative;
+}
+
+/* Logo Styling */
+.logo-image {
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+    transform: scale(2);
+    transform-origin: left;
+}
+
+/* Navbar Links */
+.navbar-links {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 2rem;
+    justify-content: center;
+    margin: 0 6rem;
+    line-height: 1;
+}
+
+/* Adjust padding for smaller screens */
+@media (max-width: 768px) {
+    .navbar-content {
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+    }
+}
+
+/* Hide the links on smaller screens */
+@media (max-width: 768px) {
+    .navbar-links {
+        display: none;
+    }
+}
+
+/* Show the links on larger screens */
+@media (min-width: 769px) {
+    .hamburger-menu {
+        display: none;
+    }
+}
+
+/* Navbar Links Styling */
+.navbar-links li a {
+    color: #1C1D1D;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar-links li a:hover {
+    text-decoration: underline;
+}
+
+/* Navbar Icons */
+.navbar-icons {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* LinkedIn Icon */
+.navbar-icons a:nth-child(1) .navbar-icon {
+    width: 45px; 
+    height: 45px;
+}
+
+/* GitHub Icon */
+.navbar-icons a:nth-child(2) .navbar-icon {
+    width: 52px;
+    height: 30px;
+}
+
+/* Hamburger Icon Hidden by Default */
+.hamburger-menu {
+    display: none;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    width: 40px; /* Adjust to match the size of your other icons */
+    height: 50px;
+    cursor: pointer;
+}
+
+/* Show hamburger menu on smaller screens */
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: block;
+    }
+}
+
+/* Sidebar Overlay */
+.sidebar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dim background */
+    display: flex;
+    justify-content: flex-end;
+    z-index: 1000;
+}
+
+/* Sidebar Menu */
+.sidebar {
+    width: 450px;
+    max-width: 80%;
+    background-color: #1C1D1D;
+    color: white;
+    padding: 2rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 1001;
+    text-align: left;
+}
+
+/* Close Button */
+.close-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+/* Sidebar Links */
+.sidebar-links {
+    list-style: none;
+    padding: 0;
+    margin-top: 5rem;
+}
+
+.sidebar-links li {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgb(52, 53, 53);
+}
+
+.sidebar-links li:last-child {
+    border-bottom: none; /* Remove divider from the last item */
+}
+
+.sidebar-links li a {
+    color: white;
+    text-decoration: none;
+    font-family: var(--typeHeaderPrimary), var(--typeHeaderFallback);
+    font-size: var(--typeHeaderSize);
+    font-weight: 200;
+    line-height: var(--typeHeaderLineHeight);
+    letter-spacing: var(--typeHeaderSpacing);
+}
+
+.sidebar-links li a:hover {
+    text-decoration: underline;
+}
+
+/* Divider */
+.navbar-divider {
+    height: 1px;
+    background-color: #1C1D1D;
+    width: 100%;
+    margin-top: 1rem;
+}
+
