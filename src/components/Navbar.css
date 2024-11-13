@@ -31,11 +31,16 @@
 
 /* Logo Styling */
 .logo-image {
-    width: 100px;
+    width: 100px; /* Base width */
     height: auto;
     object-fit: contain;
-    transform: scale(2);
-    transform-origin: left;
+    transform: scale(2); /* Scale the logo up by 1.5 times */
+}
+
+@media (max-width: 768px) {
+    .logo-image {
+        transform: scale(1.5);
+    }
 }
 
 /* Navbar Links */
@@ -104,17 +109,18 @@
 /* Hamburger Icon Hidden by Default */
 .hamburger-menu {
     display: none;
-    padding-bottom: 8px;
-    padding-left: 10px;
-    width: 40px; /* Adjust to match the size of your other icons */
-    height: 50px;
+    padding-left: 7px;
+    width: 35px; /* Adjust to match the size of your other icons */
+    height: 40px;
     cursor: pointer;
 }
 
 /* Show hamburger menu on smaller screens */
 @media (max-width: 768px) {
+    .navbar-icons .navbar-icon,
     .hamburger-menu {
         display: block;
+        transform: scale(0.8); /* Scale down icons to 80% */
     }
 }
 
