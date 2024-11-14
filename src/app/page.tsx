@@ -1,6 +1,10 @@
 // app/page.tsx
 import React from 'react';
 import Navbar from '../components/Navbar';
+import About from '../components/About';
+import Education from '../components/Education';
+import Experience from '../components/Experience';
+import Footer from '../components/Footer';
 
 export default function HomePage() {
   return (
@@ -8,9 +12,15 @@ export default function HomePage() {
       <Navbar />
       {/* Main content goes here */}
       <div style={{ padding: '2rem', textAlign: 'center' }}>
-        <h1>ABOUT</h1>
-        {/* Add the rest of your page content here */}
+        <About />
       </div>
+      <div style={{ padding: '2rem', textAlign: 'center' }}>
+        <Education />
+      </div>
+      <div style={{ padding: '2rem', textAlign: 'center' }}>
+        <Experience />
+      </div>
+      <Footer />
     </>
   );
 }

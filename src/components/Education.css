@@ -1,0 +1,85 @@
+/* components/Education.css */
+
+.education-section {
+    font-family: var(--typeBasePrimary), var(--typeBaseFallback);
+    font-size: calc(var(--typeBaseSize) * 1.2 * 0.83);
+    font-weight: var(--typeBaseWeight);
+    line-height: var(--typeBaseLineHeight);
+    letter-spacing: var(--typeBaseSpacing);
+    text-rendering: optimizeSpeed;
+    -webkit-font-smoothing: antialiased;
+    color: #1C1D1D;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.education-section h1 {
+    font-family: var(--typeHeaderPrimary), var(--typeHeaderFallback);
+    font-size: calc(var(--typeHeaderSize));
+    line-height: var(--typeHeaderLineHeight);
+    letter-spacing: var(--typeHeaderSpacing);
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 2rem;
+    border-left: 1px solid #1C1D1D;
+    max-width: 50rem;
+    margin: 0 auto;
+}
+
+.timeline-item {
+    position: relative;
+    padding: 1.5rem 0;
+    margin-bottom: 2rem;
+    display: flex;
+    text-align: left;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -36px;
+    top: 42px;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #1C1D1D;
+    border-radius: 50%;
+}
+
+.timeline-connector {
+    position: absolute;
+    left: -32px;
+    top: 45px;
+    width: 4rem;
+    height: 1px;
+    background-color: #1C1D1D; /* Dark color for connector line */
+}
+
+.timeline-content {
+    background-color: white;
+    padding: 1.5rem;
+    border: 1px solid #1C1D1D;
+    margin-left: 2rem;
+    width: 100%;
+}
+
+.timeline-content h2 {
+    font-size: calc(var(--typeHeaderSize) * 0.85);
+    font-family: var(--typeHeaderPrimary), var(--typeHeaderFallback);
+    margin-bottom: 0.7rem;
+    color: #1C1D1D;
+    font-weight: 400;
+}
+
+.timeline-content p {
+    font-size: calc(var(--typeBaseSize) * 0.95);
+    line-height: var(--typeBaseLineHeight);
+    margin: 0.3rem 0;
+}
+
+.timeline-content p strong {
+    font-weight: bold;
+}

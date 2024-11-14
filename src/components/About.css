@@ -1,0 +1,31 @@
+/* components/About.css */
+
+.about-section {
+    font-family: var(--typeBasePrimary), var(--typeBaseFallback);
+    font-size: calc(var(--typeBaseSize) * 1.2 * 0.83);
+    font-weight: var(--typeBaseWeight);
+    line-height: var(--typeBaseLineHeight);
+    letter-spacing: var(--typeBaseSpacing);
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    text-rendering: optimizeSpeed;
+    -webkit-font-smoothing: antialiased;
+    color: #1C1D1D;
+}
+
+.about-section h1 {
+    font-family: var(--typeHeaderPrimary), var(--typeHeaderFallback);
+    font-size: calc(var(--typeHeaderSize));
+    line-height: var(--typeHeaderLineHeight);
+    letter-spacing: var(--typeHeaderSpacing);
+    font-weight: 400;
+    text-align: center;
+}
+
+.about-description {
+    margin: 0 auto;
+    margin-top: 2rem;
+    text-align: left;
+    min-width: 20rem;
+    max-width: 50rem;
+}

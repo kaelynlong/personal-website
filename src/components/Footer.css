@@ -1,0 +1,61 @@
+/* components/Footer.css */
+
+.footer {
+    background-color: #1C1D1D;
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center content horizontally */
+    font-family: var(--typeBasePrimary), var(--typeBaseFallback);
+    font-weight: var(--typeBaseWeight);
+    line-height: var(--typeBaseLineHeight);
+    letter-spacing: var(--typeBaseSpacing);
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    box-sizing: border-box;
+    padding: 2rem 0;
+}
+
+.footer-content {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center text */
+}
+
+.footer-info{
+    font-size: calc(var(--typeBaseSize) * 0.93);
+    letter-spacing: var(--typeBaseSpacing);
+    line-height: var(--typeBaseLineHeight);
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center links horizontally */
+    gap: 0.5rem;
+    width: 100%;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    box-sizing: border-box; /* Ensure padding doesn’t affect width */
+    text-align: center; /* Center link text */
+}
+
+.footer-info a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-info a:hover {
+    text-decoration: none;
+}
+
+/* Centered copyright */
+.footer-copyright {
+    font-size: 12px;
+    margin-top: 1rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}
