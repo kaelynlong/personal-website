@@ -52,7 +52,7 @@
 .timeline-connector {
     position: absolute;
     left: -32px;
-    top: 45px;
+    top: 45.5px;
     width: 4rem;
     height: 1px;
     background-color: #1C1D1D; /* Dark color for connector line */

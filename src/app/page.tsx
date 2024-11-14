@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar';
 import About from '../components/About';
 import Education from '../components/Education';
 import Experience from '../components/Experience';
+import Projects from '../components/Projects';
 import Footer from '../components/Footer';
 
 export default function HomePage() {
@@ -19,6 +20,9 @@ export default function HomePage() {
       </div>
       <div style={{ padding: '2rem', textAlign: 'center' }}>
         <Experience />
+      </div>
+      <div style={{ padding: '2rem', textAlign: 'center' }}>
+        <Projects />
       </div>
       <Footer />
     </>

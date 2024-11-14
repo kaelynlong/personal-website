@@ -1,0 +1,159 @@
+.projects-section {
+    font-family: var(--typeBasePrimary), var(--typeBaseFallback);
+    font-size: calc(var(--typeBaseSize) * 1.2 * 0.83);
+    font-weight: var(--typeBaseWeight);
+    line-height: var(--typeBaseLineHeight);
+    letter-spacing: var(--typeBaseSpacing);
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    text-rendering: optimizeSpeed;
+    -webkit-font-smoothing: antialiased;
+    color: #1C1D1D;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.projects-container {
+    max-width: 50rem; /* Set max width for the grid container */
+    width: 100%;
+}
+
+.projects-section h1 {
+    font-family: var(--typeHeaderPrimary), var(--typeHeaderFallback);
+    font-size: calc(var(--typeHeaderSize));
+    line-height: var(--typeHeaderLineHeight);
+    letter-spacing: var(--typeHeaderSpacing);
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Maximum of 2 columns */
+    gap: 1rem;
+    justify-content: center; /* Center tiles if there's an odd number */
+}
+
+.project-tile {
+    background-color: #ffffff; /* White background */
+    border: 1px solid #000000; /* Black border */
+    height: 250px; /* Set height to make tiles rectangular */
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    transition: background-color 0.3s
+}
+
+.project-tile:hover {
+    background-color: #ecdce4;
+    border: none;
+}
+
+.project-info {
+    text-align: left; /* Left-align the content */
+}
+
+.project-info h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #1C1D1D;
+}
+
+.project-info p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+    color: #1C1D1D;
+}
+
+/* Skills (tags) on the project tile */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.tag {
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text */
+    padding: 0.3rem 0.5rem;
+    border-radius: 0; /* Remove rounded edges */
+    font-size: 0.8rem;
+}
+
+/* Popup styles */
+.project-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+    text-align: left;
+}
+
+.close-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.popup-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.popup-details h2 {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.project-link {
+    color: inherit;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.project-link:hover {
+    color: #ecdce4;
+    border: none; /* Remove border on hover */
+}
+
+.popup-details p {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #1C1D1D;
+}
+
+/* Responsive design for mobile: 1 column per row on small screens */
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr; /* Switch to 1 column on smaller screens */
+    }
+}
