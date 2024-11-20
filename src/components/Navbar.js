@@ -36,10 +36,10 @@ export default function Navbar() {
                             <a href="#about">ABOUT</a>
                         </li>
                         <li>
-                            <a href="#education">EDUCATION</a>
+                            <a href="#skills">SKILLS</a>
                         </li>
                         <li>
-                            <a href="#skills">SKILLS</a>
+                            <a href="#education">EDUCATION</a>
                         </li>
                         <li>
                             <a href="#experience">EXPERIENCE</a>
@@ -102,13 +102,13 @@ export default function Navbar() {
                         </a>
                     </li>
                     <li>
-                        <a href="#education" onClick={closeSidebar}>
-                            EDUCATION
+                        <a href="#skills" onClick={closeSidebar}>
+                            SKILLS
                         </a>
                     </li>
                     <li>
-                        <a href="#skills" onClick={closeSidebar}>
-                            SKILLS
+                        <a href="#education" onClick={closeSidebar}>
+                            EDUCATION
                         </a>
                     </li>
                     <li>

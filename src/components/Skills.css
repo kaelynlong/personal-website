@@ -1,4 +1,4 @@
-.about-section {
+.skills-section {
     font-family: var(--typeBasePrimary), var(--typeBaseFallback);
     font-size: calc(var(--typeBaseSize) * 1.2 * 0.83);
     font-weight: var(--typeBaseWeight);
@@ -11,49 +11,50 @@
     color: #1C1D1D;
     scroll-margin-top: 10rem; 
     padding-top: 2rem;
+    text-align: center;
 }
 
-.about-section h1 {
+.skills-section h1 {
     font-family: var(--typeHeaderPrimary), var(--typeHeaderFallback);
     font-size: calc(var(--typeHeaderSize));
     line-height: var(--typeHeaderLineHeight);
     letter-spacing: var(--typeHeaderSpacing);
     font-weight: 400;
-    text-align: center;
+    margin-bottom: 2rem;
 }
 
-.about-description {
-    margin: 0 auto;
-    margin-top: 2rem;
-    text-align: left;
-    min-width: 20rem;
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.skills-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align items to the left */
+    width: 100%;
     max-width: 50rem;
     opacity: 0; /* Hidden by default */
     transform: translateY(20px); /* Positioned slightly below */
     transition: opacity 0.8s ease, transform 0.8s ease; /* Smooth transition */
 }
 
-.about-description.fade-in {
+.skills-item.fade-in {
     opacity: 1; /* Fully visible */
     transform: translateY(0); /* Back to original position */
 }
 
-/* Styling the Resume Button */
-.resume-button {
-    display: inline-block;
-    background-color: #000000; /* Black background */
-    color: #ffffff; /* White text */
-    padding: 0.5rem 2.5rem;
-    border-radius: 0; /* No rounded corners */
-    font-size: 0.9rem;
-    text-decoration: none; /* Remove underline */
-    margin-top: 3rem; /* Add spacing */
-    text-align: center;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+.skills-icon {
+    height: 3rem; /* Adjust height to span two lines */
+    margin-right: 2rem;
+    object-fit: contain;
+    flex-shrink: 0; /* Prevent the icon from shrinking */
 }
 
-.resume-button:hover {
-    background-color: #ecdce4; /* Light pink background */
-    color: #000000; /* Black text */
-    transform: scale(1.05); /* Slightly larger on hover */
+.skills-text {
+    flex: 1;
+    text-align: left;
+    font-size: 1rem;
 }
