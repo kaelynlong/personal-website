@@ -139,7 +139,8 @@
     max-width: 900px;
     position: relative;
     text-align: left;
-    border: 1px solid #000; /* Optional: Adds a border for a clean look */
+    border: 1px solid #000;
+    padding-top: 3.5rem;
 }
 
 .close-button {
@@ -197,6 +198,13 @@
     font-size: 1rem;
     color: #1C1D1D;
 }
+
+.popup-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    object-fit: cover; /* Ensures image scaling */
+  }  
 
 /* Responsive design for mobile: 1 column per row on small screens */
 @media (max-width: 768px) {

@@ -32,16 +32,13 @@ export default function About() {
     <div id="about" className="about-section">
       <h1>ABOUT</h1>
       <p className={`about-description ${visibleSections.includes("0") ? "fade-in" : ""}`}>
-        I’m a third-year computer science student at the University of Michigan’s College of Engineering, with a minor in UX Design and Statistics. I’m passionate about creating accessible, polished user interfaces that seamlessly combine design creativity with the precision of engineering.
+        I’m a third-year Computer Science student at the University of Michigan’s College of Engineering, minoring in UX Design and Statistics. I’m passionate about designing accessible, polished user interfaces that seamlessly merge creativity with engineering precision. Additionally, my interest in quantitative algorithms fuels a data-driven approach to software design and problem-solving.
       </p>
       <p className={`about-description ${visibleSections.includes("1") ? "fade-in" : ""}`}>
-        Beyond UI and accessibility, I’m also deeply interested in statistics and quantitative algorithms, which fuel my approach to problem-solving and drive my fascination with the data-driven aspects of software design. I’m motivated by a commitment to innovative thinking and aspire to build solutions that don’t just meet user needs but push the boundaries of what’s possible in technology.
+        Through software engineering internships, machine learning research, and leadership in student organizations, I’ve developed a strong background in full-stack development. These experiences have also given me a solid foundation in both creative and analytical aspects of technology, fueling my dedication to building innovative, user-centered solutions.
       </p>
       <p className={`about-description ${visibleSections.includes("2") ? "fade-in" : ""}`}>
-        In the past, I’ve had the opportunity to apply these skills in various contexts — from internships and research to student organizations — where I’ve been able to develop a strong foundation in both creative and analytical approaches to technology. These experiences have solidified my dedication to making a positive impact through tech, through both user-centered design and data-driven innovation.
-      </p>
-      <p className={`about-description ${visibleSections.includes("3") ? "fade-in" : ""}`}>
-        In my free time, I enjoy exploring fashion, painting, and reading. I’m always excited to bring together these interests to shape projects that bridge creativity with practical solutions that drive lasting change.
+        In my free time, I enjoy exploring fashion, painting, and reading, which inspire my creativity and bring fresh perspectives to my work.
       </p>
       <a
         className="resume-button"

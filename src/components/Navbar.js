@@ -50,7 +50,7 @@ export default function Navbar() {
                     </ul>
                     <div className="navbar-icons">
                         <a
-                            href="https://linkedin.com"
+                            href="https://www.linkedin.com/in/kaelynlong/"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
@@ -61,7 +61,7 @@ export default function Navbar() {
                             />
                         </a>
                         <a
-                            href="https://github.com"
+                            href="https://github.com/kaelynlong"
                             target="_blank"
                             rel="noopener noreferrer"
                         >

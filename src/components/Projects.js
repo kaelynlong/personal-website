@@ -40,13 +40,19 @@ export default function Projects() {
       ),
       tags: ["C++"]
     },    
-    { name: "Personal Website", shortDesc: "Personal portfolio showcasing projects, skills, and experience.", longDesc: "You're viewing it! Designed to highlight professional experience, projects, and skills while incorporating animations and interactive elements. Features accessibility optimizations to enhance user experience, including keyboard navigation, dark mode, reduced motion support, and a fully responsive design.", tags: ["Next.js", "CSS", "JavaScript"] },
+    { 
+      name: "Personal Website", 
+      shortDesc: "Personal portfolio showcasing projects, skills, and experience.", 
+      longDesc: "You're viewing it! Designed and built from scratch to highlight professional experience, projects, and skills while incorporating animations and interactive elements. Features accessibility optimizations to enhance user experience, including keyboard navigation, dark mode, reduced motion support, and a fully responsive design.",
+      tags: ["Next.js", "CSS", "JavaScript"],
+      image: "/images/personalPortfolio.png" // Include the image path here
+    },
     { name: "View All", shortDesc: "Explore more projects on GitHub" }, // Updated: Removed longDesc and tags
   ];
 
   const handleProjectClick = (project) => {
     if (project.name === "View All") {
-      window.open("https://github.com", "_blank"); // Redirects to GitHub
+      window.open("https://github.com/kaelynlong?tab=repositories", "_blank"); // Redirects to GitHub
     } else {
       setSelectedProject(project);
     }
@@ -118,7 +124,9 @@ export default function Projects() {
             <button className="close-button" onClick={closePopup}>
               <img src="/images/closeIcon.png" alt="Close" />
             </button>
-            <img src="placeholder-image.png" alt={selectedProject.name} className="popup-image" /> {/* Replace with actual image */}
+            {selectedProject.image && (
+              <img src={selectedProject.image} alt={selectedProject.name} className="popup-image" />
+            )}
             <div className="popup-details">
               <h2>{selectedProject.name}</h2>
               <p>{selectedProject.longDesc}</p>
