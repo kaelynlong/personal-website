@@ -11,6 +11,8 @@
     text-rendering: optimizeSpeed;
     -webkit-font-smoothing: antialiased;
     color: #1C1D1D;
+    scroll-margin-top: 10rem; 
+    padding-top: 2rem;
 }
 
 .about-section h1 {
@@ -28,4 +30,20 @@
     text-align: left;
     min-width: 20rem;
     max-width: 50rem;
+}
+
+.about-description {
+    margin: 0 auto;
+    margin-top: 2rem;
+    text-align: left;
+    min-width: 20rem;
+    max-width: 50rem;
+    opacity: 0; /* Hidden by default */
+    transform: translateY(20px); /* Positioned slightly below */
+    transition: opacity 0.8s ease, transform 0.8s ease; /* Smooth transition */
+}
+
+.about-description.fade-in {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Back to original position */
 }

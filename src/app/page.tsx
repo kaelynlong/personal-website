@@ -1,4 +1,5 @@
-// app/page.tsx
+"use client";
+
 import React from 'react';
 import Navbar from '../components/Navbar';
 import About from '../components/About';
@@ -11,7 +12,6 @@ export default function HomePage() {
   return (
     <>
       <Navbar />
-      {/* Main content goes here */}
       <div style={{ padding: '2rem', textAlign: 'center' }}>
         <About />
       </div>

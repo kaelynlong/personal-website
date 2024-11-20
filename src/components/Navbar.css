@@ -1,6 +1,20 @@
 /* components/Navbar.css */
 
-/* General Styles */
+/* Announcement Bar */
+.announcement-bar {
+    font-family: var(--typeBasePrimary), var(--typeBaseFallback);
+    font-size: var(--typeBaseSize);
+    line-height: var(--typeBaseLineHeight);
+    letter-spacing: var(--typeBaseSpacing);
+    -webkit-font-smoothing: antialiased;
+    background-color: #1c1d1d;
+    color: #fff;
+    padding: 0.4rem 0;
+    text-align: center;
+    position: static; /* This ensures it scrolls away */
+}
+
+/* Navbar */
 .navbar {
     font-family: var(--typeBasePrimary), var(--typeBaseFallback);
     font-size: var(--typeBaseSize);
@@ -11,22 +25,16 @@
     color: #1C1D1D;
     text-align: center;
     width: 100%;
-    position: relative;
+    position: sticky; /* Sticky position */
+    top: 0; /* Stick to the top of the viewport */
+    z-index: 1000; /* Ensure it appears above other content */
 }
 
-/* Announcement Bar */
-.announcement-bar {
-    background-color: #1C1D1D;
-    color: #fff;
-    padding: 0.4rem 0;
-}
-
-/* Navbar Content */
 .navbar-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 3.4rem 8vw;
+    padding: 3rem 8vw;
     position: static;
 }
 
@@ -35,7 +43,7 @@
     width: 100px; /* Base width */
     height: auto;
     object-fit: contain;
-    transform: scale(2); /* Scale the logo up by 1.5 times */
+    transform: scale(2);
 }
 
 @media (max-width: 768px) {
@@ -61,10 +69,6 @@
         padding-top: 2rem;
         padding-bottom: 1rem;
     }
-}
-
-/* Hide the links on smaller screens */
-@media (max-width: 768px) {
     .navbar-links {
         display: none;
     }
@@ -85,7 +89,7 @@
 }
 
 .navbar-links li a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 /* Navbar Icons */
@@ -111,7 +115,7 @@
 .hamburger-menu {
     display: none;
     padding-left: 7px;
-    width: 35px; /* Adjust to match the size of your other icons */
+    width: 35px;
     height: 40px;
     cursor: pointer;
 }
@@ -121,7 +125,7 @@
     .navbar-icons .navbar-icon,
     .hamburger-menu {
         display: block;
-        transform: scale(0.8); /* Scale down icons to 80% */
+        transform: scale(0.8);
     }
 }
 
@@ -132,13 +136,13 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.3); /* Dim background */
+    background-color: rgba(0, 0, 0, 0.3);
     display: flex;
     justify-content: flex-end;
     z-index: 1000;
-    opacity: 0; /* Fully transparent initially */
-    pointer-events: none; /* Prevent clicks when sidebar is closed */
-    transition: opacity 0.5s ease; /* Smooth opacity transition */
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
 }
 
 /* Sidebar Menu */
@@ -155,19 +159,19 @@
     position: fixed;
     top: 0;
     right: 0;
-    transform: translateX(100%); /* Start off-screen */
-    transition: transform 0.3s ease; /* Slide out */
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
 }
 
 /* Open state for the sidebar and overlay */
 .sidebar-overlay.open {
     opacity: 1;
-    pointer-events: auto; /* Enable clicks when sidebar is open */
+    pointer-events: auto;
 }
 
 .sidebar.open {
-    transform: translateX(0); /* Slide sidebar into view */
-    transition: transform 0.5s ease; /* Slide in */
+    transform: translateX(0);
+    transition: transform 0.5s ease;
 }
 
 /* Sidebar Links */
@@ -205,7 +209,7 @@
     top: 2rem;
     right: 2.5rem;
     cursor: pointer;
-    width: 24px; /* Adjust size as needed */
+    width: 24px;
     height: 24px;
     display: flex;
     align-items: center;
@@ -213,15 +217,15 @@
     padding: 0;
 }
 
-/* Styling for the X icon created with CSS */
+/* Styling for the X icon */
 .close-button::before,
 .close-button::after {
     content: '';
     position: absolute;
-    width: 16px; /* Length of the X lines */
-    height: 2.2px; /* Thickness of the X lines */
-    background-color: white; /* White color for the X */
-    border-radius: 1px; /* Slight rounding for smooth look */
+    width: 16px;
+    height: 2.2px;
+    background-color: white;
+    border-radius: 1px;
 }
 
 /* Rotation to form the X */
@@ -238,5 +242,4 @@
     height: 1px;
     background-color: #1C1D1D;
     width: 100%;
-    margin-top: 1rem;
 }

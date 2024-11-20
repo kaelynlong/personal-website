@@ -10,7 +10,8 @@
     -webkit-font-smoothing: antialiased;
     color: #1C1D1D;
     margin: 0 auto;
-    padding: 2rem;
+    scroll-margin-top: 10rem; 
+    padding-top: 2rem;
 }
 
 .experience-section h1 {
@@ -31,7 +32,7 @@
     margin: 0 auto;
 }
 
-.timeline-item {
+.experience-timeline-item {
     position: relative;
     padding: 1.5rem 0;
     margin-bottom: 2rem;
@@ -78,4 +79,31 @@
     font-size: calc(var(--typeBaseSize) * 0.95);
     line-height: var(--typeBaseLineHeight);
     margin: 0.3rem 0;
+}
+
+.indented-list {
+    margin-left: 1rem; /* Adjust this value for more or less indentation */
+}
+
+.indented-list li {
+    font-size: calc(var(--typeBaseSize) * 0.95); /* Match paragraph font size */
+    font-family: var(--typeBasePrimary), var(--typeBaseFallback); /* Match font family */
+    font-weight: var(--typeBaseWeight); /* Match font weight */
+    line-height: var(--typeBaseLineHeight); /* Match line height */
+    letter-spacing: var(--typeBaseSpacing); /* Match spacing */
+    color: #1C1D1D; /* Match text color */
+    margin-bottom: 0.5rem; /* Space between list items */
+    line-height: 1.5; /* Improve readability */
+}
+
+/* Fade-in animation styles for Experience */
+.fade-item, .experience-timeline-item {
+    opacity: 0; /* Initially hidden */
+    transform: translateY(60px); /* Slightly below its original position */
+    transition: opacity 0.8s ease, transform 0.8s ease; /* Smooth transition */
+}
+
+.fade-item.fade-in, .experience-timeline-item.fade-in {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Back to original position */
 }

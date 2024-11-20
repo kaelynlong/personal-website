@@ -11,7 +11,8 @@
     color: #1C1D1D;
     display: flex;
     justify-content: center;
-    padding: 2rem;
+    scroll-margin-top: 10rem; 
+    padding-top: 2rem;
 }
 
 .projects-container {
@@ -32,36 +33,52 @@
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Maximum of 2 columns */
-    gap: 1rem;
+    gap: 2rem; 
     justify-content: center; /* Center tiles if there's an odd number */
 }
 
 .project-tile {
-    background-color: #ffffff; /* White background */
+    background-color: #ffffff;
     border: 1px solid #000000; /* Black border */
-    height: 250px; /* Set height to make tiles rectangular */
+    height: 250px;
     position: relative;
     cursor: pointer;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 1rem;
-    transition: background-color 0.3s
+    transition: 
+        background-color 0.3s,
+        border-color 0.3s,
+        transform 0.3s ease,
+        opacity 0.3s ease;
+    transform: translateY(20px);
+    opacity: 0;
+    will-change: transform, opacity;
+}
+
+.project-tile.fade-in {
+    transform: translateY(0);
+    opacity: 1;
 }
 
 .project-tile:hover {
     background-color: #ecdce4;
-    border: none;
+    border-color: #ffffff;
 }
 
 .project-info {
-    text-align: left; /* Left-align the content */
+    text-align: left;
+    position: relative;
 }
 
 .project-info h3 {
     margin: 0;
     font-size: 1.2rem;
     color: #1C1D1D;
+    display: flex;
+    align-items: center; /* Center the arrow vertically */
+    justify-content: space-between;
 }
 
 .project-info p {
@@ -76,6 +93,21 @@
     flex-wrap: wrap;
     gap: 0.5rem;
     margin-top: 1rem;
+}
+
+/* Arrow for View All */
+.project-arrow {
+    opacity: 0;
+    transform: translateX(-10px); /* Start slightly to the left of its position */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    color: #000000; /* Black arrow */
+    font-size: 1.2rem; /* Adjust size as needed */
+    margin-left: 0.5rem; /* Space between text and arrow */
+}
+
+.view-all:hover .project-arrow {
+    opacity: 1;
+    transform: translateX(0); /* Slide to its position */
 }
 
 .tag {
@@ -103,11 +135,11 @@
 .popup-content {
     background-color: white;
     padding: 2rem;
-    border-radius: 8px;
-    width: 80%;
-    max-width: 600px;
+    width: 100%;
+    max-width: 900px;
     position: relative;
     text-align: left;
+    border: 1px solid #000; /* Optional: Adds a border for a clean look */
 }
 
 .close-button {
@@ -116,8 +148,23 @@
     right: 1rem;
     background: none;
     border: none;
-    font-size: 1.5rem;
     cursor: pointer;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.close-button::before,
+.close-button::after {
+    content: none;
+}
+
+.close-button img {
+    width: 20px;
+    height: 20px;
 }
 
 .popup-image {

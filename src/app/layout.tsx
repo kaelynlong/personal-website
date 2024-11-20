@@ -1,9 +1,8 @@
-// app/layout.tsx
 import '../app/globals.css';
 
 export const metadata = {
-  title: 'Your Page Title',
-  description: 'Your page description',
+  title: 'Personal Website Portfolio',
+  description: 'Kaelyn Long Lin',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -15,7 +14,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <title>{metadata.title}</title>
       </head>
       <body>
-        {children} {/* This will render the content from page.tsx or other pages */}
+        {children}
       </body>
     </html>
   );

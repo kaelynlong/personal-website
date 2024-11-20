@@ -10,7 +10,8 @@
     -webkit-font-smoothing: antialiased;
     color: #1C1D1D;
     margin: 0 auto;
-    padding: 2rem;
+    scroll-margin-top: 10rem; 
+    padding-top: 2rem;
 }
 
 .education-section h1 {
@@ -31,7 +32,7 @@
     margin: 0 auto;
 }
 
-.timeline-item {
+.education-timeline-item {
     position: relative;
     padding: 1.5rem 0;
     margin-bottom: 2rem;
@@ -82,4 +83,16 @@
 
 .timeline-content p strong {
     font-weight: bold;
+}
+
+/* Fade-in animation styles for Education */
+.fade-item, .education-timeline-item {
+    opacity: 0; /* Initially hidden */
+    transform: translateY(60px); /* Slightly below its original position */
+    transition: opacity 0.8s ease, transform 0.8s ease; /* Smooth transition */
+}
+
+.fade-item.fade-in, .education-timeline-item.fade-in {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Back to original position */
 }
