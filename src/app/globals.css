@@ -48,7 +48,6 @@ body {
   --iconLinecaps: miter;
 }
 
-/* Add a default background color to prevent visual gaps */
 body {
-  background-color: #fff; /* Optional, for consistent background */
+  background-color: #fff;
 }

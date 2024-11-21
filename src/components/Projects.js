@@ -20,13 +20,13 @@ export default function Projects() {
       longDesc: 
         "Developed a multi-worker and fault-tolerant MapReduce server in Python using threading and TCP to process user-submitted tasks. Built a scalable search engine from scratch in ReactJS based on text segmentation, Hadoop MapReduce indexing, and tf-idf scores. Allows users to query Wikipedia pages and return a list of results ordered by relevance.",
       tags: ["Python", "React", "Hadoop", "AWS"]
-    },    
+    },
     {
       name: "LC-2K",
       shortDesc: "Custom RISC architecture involving pipeline assembly, cache simulation, and linking.",
       longDesc: "Developed a custom RISC architecture that converts assembly code into machine code for execution simulation. Includes a pipeline assembler with forwarding and stall mechanisms to manage hazards, a cache simulator supporting various mapping techniques, and a linker to combine object files into executables.",
       tags: ["C"]
-    },    
+    },
     {
       name: "DSA Class Projects",
       shortDesc: "A series of C++ projects demonstrating proficiency in data structures, algorithms, and optimization techniques.",
@@ -38,21 +38,21 @@ export default function Projects() {
           <strong>Drone Delivery:</strong> Implemented fast route tracking across a simulated campus using MST, branch and bound, and Kruskal’s algorithms, alongside heuristic approaches such as TSP and Knapsack to achieve near-optimal results.
         </>
       ),
-      tags: ["C++"]
-    },    
+      tags: ["C++"],
+    },
     { 
       name: "Personal Website", 
       shortDesc: "Personal portfolio showcasing projects, skills, and experience.", 
       longDesc: "You're viewing it! Designed and built from scratch to highlight professional experience, projects, and skills while incorporating animations and interactive elements. Features accessibility optimizations to enhance user experience, including keyboard navigation, dark mode, reduced motion support, and a fully responsive design.",
       tags: ["Next.js", "CSS", "JavaScript"],
-      image: "/images/personalPortfolio.png" // Include the image path here
+      image: "/images/personalPortfolio.png"
     },
-    { name: "View All", shortDesc: "Explore more projects on GitHub" }, // Updated: Removed longDesc and tags
+    { name: "View All", shortDesc: "Explore more projects on GitHub" },
   ];
 
   const handleProjectClick = (project) => {
     if (project.name === "View All") {
-      window.open("https://github.com/kaelynlong?tab=repositories", "_blank"); // Redirects to GitHub
+      window.open("https://github.com/kaelynlong?tab=repositories", "_blank"); 
     } else {
       setSelectedProject(project);
     }
@@ -98,6 +98,10 @@ export default function Projects() {
                 project.name === "View All" ? "view-all" : ""
               }`}
               onClick={() => handleProjectClick(project)}
+              tabIndex={0} // Add tabIndex here for keyboard focus
+              onKeyDown={(e) => {
+                if (e.key === "Enter") handleProjectClick(project); // Allow Enter key to trigger click
+              }}
             >
               <div className="project-info">
                 <h3>
@@ -119,21 +123,29 @@ export default function Projects() {
       </div>
 
       {selectedProject && (
-        <div className="project-popup">
-          <div className="popup-content">
-            <button className="close-button" onClick={closePopup}>
-              <img src="/images/closeIcon.png" alt="Close" />
-            </button>
-            {selectedProject.image && (
-              <img src={selectedProject.image} alt={selectedProject.name} className="popup-image" />
-            )}
-            <div className="popup-details">
-              <h2>{selectedProject.name}</h2>
-              <p>{selectedProject.longDesc}</p>
-              <div className="tags">
-                {selectedProject.tags.map((tag, idx) => (
-                  <span key={idx} className="tag">{tag}</span>
-                ))}
+        <div
+          className="project-popup-overlay"
+          onClick={closePopup}
+        >
+          <div
+            className="project-popup"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="popup-content">
+              <button className="close-button" onClick={closePopup}>
+                <img src="/images/closeIcon.png" alt="Close" />
+              </button>
+              {selectedProject.image && (
+                <img src={selectedProject.image} alt={selectedProject.name} className="popup-image" />
+              )}
+              <div className="popup-details">
+                <h2>{selectedProject.name}</h2>
+                <p>{selectedProject.longDesc}</p>
+                <div className="tags">
+                  {selectedProject.tags.map((tag, idx) => (
+                    <span key={idx} className="tag">{tag}</span>
+                  ))}
+                </div>
               </div>
             </div>
           </div>

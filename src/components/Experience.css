@@ -56,7 +56,7 @@
     top: 45.5px;
     width: 4rem;
     height: 1px;
-    background-color: #1C1D1D; /* Dark color for connector line */
+    background-color: #1C1D1D;
 }
 
 .timeline-content {
@@ -82,28 +82,28 @@
 }
 
 .indented-list {
-    margin-left: 1rem; /* Adjust this value for more or less indentation */
+    margin-left: 1rem;
 }
 
 .indented-list li {
-    font-size: calc(var(--typeBaseSize) * 0.95); /* Match paragraph font size */
-    font-family: var(--typeBasePrimary), var(--typeBaseFallback); /* Match font family */
-    font-weight: var(--typeBaseWeight); /* Match font weight */
-    line-height: var(--typeBaseLineHeight); /* Match line height */
-    letter-spacing: var(--typeBaseSpacing); /* Match spacing */
-    color: #1C1D1D; /* Match text color */
-    margin-bottom: 0.5rem; /* Space between list items */
-    line-height: 1.5; /* Improve readability */
+    font-size: calc(var(--typeBaseSize) * 0.95);
+    font-family: var(--typeBasePrimary), var(--typeBaseFallback);
+    font-weight: var(--typeBaseWeight);
+    line-height: var(--typeBaseLineHeight);
+    letter-spacing: var(--typeBaseSpacing);
+    color: #1C1D1D;
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
 }
 
-/* Fade-in animation styles for Experience */
+/* Fade-in animation */
 .fade-item, .experience-timeline-item {
-    opacity: 0; /* Initially hidden */
-    transform: translateY(60px); /* Slightly below its original position */
-    transition: opacity 0.8s ease, transform 0.8s ease; /* Smooth transition */
+    opacity: 0; 
+    transform: translateY(60px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
 .fade-item.fade-in, .experience-timeline-item.fade-in {
-    opacity: 1; /* Fully visible */
-    transform: translateY(0); /* Back to original position */
+    opacity: 1;
+    transform: translateY(0);
 }

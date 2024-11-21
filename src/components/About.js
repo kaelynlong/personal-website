@@ -35,7 +35,7 @@ export default function About() {
         I’m a third-year Computer Science student at the University of Michigan’s College of Engineering, minoring in UX Design and Statistics. I’m passionate about designing accessible, polished user interfaces that seamlessly merge creativity with engineering precision. Additionally, my interest in quantitative algorithms fuels a data-driven approach to software design and problem-solving.
       </p>
       <p className={`about-description ${visibleSections.includes("1") ? "fade-in" : ""}`}>
-        Through software engineering internships, machine learning research, and leadership in student organizations, I’ve developed a strong background in full-stack development. These experiences have also given me a solid foundation in both creative and analytical aspects of technology, fueling my dedication to building innovative, user-centered solutions.
+        Through software engineering internships, machine learning research, and leadership in student organizations, I’ve developed a strong background in in both creative and analytical aspects of technology, fueling my dedication to building innovative solutions.
       </p>
       <p className={`about-description ${visibleSections.includes("2") ? "fade-in" : ""}`}>
         In my free time, I enjoy exploring fashion, painting, and reading, which inspire my creativity and bring fresh perspectives to my work.

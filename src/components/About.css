@@ -28,32 +28,32 @@
     text-align: left;
     min-width: 20rem;
     max-width: 50rem;
-    opacity: 0; /* Hidden by default */
-    transform: translateY(20px); /* Positioned slightly below */
-    transition: opacity 0.8s ease, transform 0.8s ease; /* Smooth transition */
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
 .about-description.fade-in {
-    opacity: 1; /* Fully visible */
+    opacity: 1;
     transform: translateY(0); /* Back to original position */
 }
 
-/* Styling the Resume Button */
+/* Resume Button */
 .resume-button {
     display: inline-block;
-    background-color: #000000; /* Black background */
-    color: #ffffff; /* White text */
+    background-color: #000000;
+    color: #ffffff;
     padding: 0.5rem 3.5rem;
-    border-radius: 0; /* No rounded corners */
+    border-radius: 0;
     font-size: 0.9rem;
-    text-decoration: none; /* Remove underline */
-    margin-top: 3rem; /* Add spacing */
+    text-decoration: none;
+    margin-top: 3rem;
     text-align: center;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .resume-button:hover {
-    background-color: #ecdce4; /* Light pink background */
-    color: #000000; /* Black text */
-    transform: scale(1.05); /* Slightly larger on hover */
+    background-color: #ecdce4;
+    color: #000000;
+    transform: scale(1.05);
 }

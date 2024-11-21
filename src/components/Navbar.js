@@ -91,10 +91,13 @@ export default function Navbar() {
                 onClick={closeSidebar}
             ></div>
             <div className={`sidebar ${isSidebarOpen ? "open" : ""}`}>
-                <button
-                    className="close-button"
-                    onClick={closeSidebar}
-                ></button>
+                <button className="close-button" onClick={closeSidebar}>
+                    <img
+                        src="/images/closeButton.png"
+                        alt="Close Sidebar"
+                        className="close-button-image"
+                    />
+                </button>
                 <ul className="sidebar-links">
                     <li>
                         <a href="#about" onClick={closeSidebar}>

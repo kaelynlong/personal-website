@@ -56,7 +56,7 @@
     top: 45.5px;
     width: 4rem;
     height: 1px;
-    background-color: #1C1D1D; /* Dark color for connector line */
+    background-color: #1C1D1D;
 }
 
 .timeline-content {
@@ -85,14 +85,14 @@
     font-weight: bold;
 }
 
-/* Fade-in animation styles for Education */
+/* Fade-in animation */
 .fade-item, .education-timeline-item {
-    opacity: 0; /* Initially hidden */
-    transform: translateY(60px); /* Slightly below its original position */
-    transition: opacity 0.8s ease, transform 0.8s ease; /* Smooth transition */
+    opacity: 0;
+    transform: translateY(60px); 
+    transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
 .fade-item.fade-in, .education-timeline-item.fade-in {
-    opacity: 1; /* Fully visible */
-    transform: translateY(0); /* Back to original position */
+    opacity: 1;
+    transform: translateY(0);
 }

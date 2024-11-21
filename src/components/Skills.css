@@ -33,24 +33,24 @@
 .skills-item {
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* Align items to the left */
+    justify-content: flex-start; /* Align to left */
     width: 100%;
     max-width: 50rem;
-    opacity: 0; /* Hidden by default */
-    transform: translateY(20px); /* Positioned slightly below */
-    transition: opacity 0.8s ease, transform 0.8s ease; /* Smooth transition */
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
 .skills-item.fade-in {
-    opacity: 1; /* Fully visible */
-    transform: translateY(0); /* Back to original position */
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .skills-icon {
-    height: 3rem; /* Adjust height to span two lines */
+    height: 3rem;
     margin-right: 2rem;
     object-fit: contain;
-    flex-shrink: 0; /* Prevent the icon from shrinking */
+    flex-shrink: 0; /* Prevent icon from shrinking */
 }
 
 .skills-text {

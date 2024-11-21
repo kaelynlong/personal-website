@@ -11,7 +11,7 @@
     color: #fff;
     padding: 0.4rem 0;
     text-align: center;
-    position: static; /* This ensures it scrolls away */
+    position: static;
 }
 
 /* Navbar */
@@ -25,9 +25,9 @@
     color: #1C1D1D;
     text-align: center;
     width: 100%;
-    position: sticky; /* Sticky position */
-    top: 0; /* Stick to the top of the viewport */
-    z-index: 1000; /* Ensure it appears above other content */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .navbar-content {
@@ -199,42 +199,6 @@
     font-weight: 200;
     line-height: var(--typeHeaderLineHeight);
     letter-spacing: var(--typeHeaderSpacing);
-}
-
-/* Close Button */
-.close-button {
-    background: none;
-    border: none;
-    position: absolute;
-    top: 2rem;
-    right: 2.5rem;
-    cursor: pointer;
-    width: 24px;
-    height: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-}
-
-/* Styling for the X icon */
-.close-button::before,
-.close-button::after {
-    content: '';
-    position: absolute;
-    width: 16px;
-    height: 2.2px;
-    background-color: white;
-    border-radius: 1px;
-}
-
-/* Rotation to form the X */
-.close-button::before {
-    transform: rotate(45deg);
-}
-
-.close-button::after {
-    transform: rotate(-45deg);
 }
 
 /* Divider */
