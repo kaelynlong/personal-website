@@ -34,7 +34,8 @@ export default function Projects() {
           <strong>Word Morphing:</strong> Designed BFS and DFS algorithms for customizable word transformations (e.g., letter changes, insertions, deletions, swaps), enabling efficient graph search and route tracing within complex dictionaries.<br />
           <strong>Mine Escape:</strong> Developed a pathfinding simulation employing priority-based search algorithms, custom priority queues using binary heaps and sorted arrays, optimizing tile discovery in grid-based environments.<br />
           <strong>Database Query Language:</strong> Built a command-line shell emulating a relational database, featuring a simplified SQL-like query language and leveraging dynamic arrays, hash tables, and binary search trees for efficient table management and query execution.<br />
-          <strong>Drone Delivery:</strong> Implemented fast route tracking across a simulated campus using MST, branch and bound, and Kruskal’s algorithms, alongside heuristic approaches such as TSP and Knapsack to achieve near-optimal results.
+          <strong>Drone Delivery:</strong> Implemented fast route tracking across a simulated campus using MST, branch and bound, and Kruskal’s algorithms, alongside heuristic approaches such as TSP and Knapsack to achieve near-optimal results.<br/>
+          <strong>Euchre:</strong> Developed a text-based simulator of popular card game, Euchre, supporting gameplay for up to 4 AI/human players to learn about abstract data types, object-oriented programming, and polymorphism.
         </>
       ),
       tags: ["C++"],
@@ -42,7 +43,7 @@ export default function Projects() {
     {
       name: "Personal Website",
       shortDesc: "Personal portfolio showcasing projects, skills, and experience.",
-      longDesc: "You're viewing it! Designed and built from scratch to highlight professional experience, projects, and skills while incorporating animations and interactive elements. Features accessibility optimizations to enhance user experience, including keyboard navigation, dark mode, reduced motion support, and a fully responsive design.",
+      longDesc: "You're viewing it! Designed and built from scratch to highlight professional experience, projects, and skills while incorporating animations and interactive elements. Features accessibility optimizations to enhance user experience, including keyboard navigation, reduced motion support, and a fully responsive design.",
       tags: ["Next.js", "CSS", "JavaScript"],
       image: "/images/personalPortfolio.png"
     },
