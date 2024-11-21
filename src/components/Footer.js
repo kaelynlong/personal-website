@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer-content">
         <ul className="footer-info">
-          <li>Coded in VS Code, built with Next.js and Tailwind CSS, deployed with Vercel</li>
+          <li>Coded in VS Code, built with Next.js and custom CSS, deployed with Vercel</li>
           <li>
             Contact: <a href="mailto:kaelynl@umich.edu">kaelynl@umich.edu</a>
           </li>
