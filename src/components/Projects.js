@@ -8,39 +8,39 @@ export default function Projects() {
   const [visibleProjects, setVisibleProjects] = useState([]);
 
   const projects = [
-      {
-        name: "Instagram Clone",
-        shortDesc: "Dynamic Instagram clone featuring user accounts, photo uploads, likes, and comments.",
-        longDesc: (
-            <>
-                Developed a dynamic web app using ReactJS, Flask, and custom REST APIs, emulating Instagram features like photo uploads, likes, comments, user following, and session management. Includes infinite scrolling and was deployed to AWS for scalability.<br />
-                <br />
-                <i>Source code is private; email kaelynl@umich.edu for access or inquiries.</i>
-            </>
-        ),
-        tags: ["Python", "React", "SQLite", "AWS"]
-      },
-      {
-        name: "Wikipedia Search Engine and Custom MapReduce Server",
-        shortDesc: "Scalable search engine and fault-tolerant MapReduce server, supporting efficient text processing, indexing, and ranking with tf-idf scores.",
-        longDesc: (
-            <>
-                Developed a multi-worker and fault-tolerant MapReduce server in Python using threading and TCP to process user-submitted tasks. Built a scalable search engine from scratch in ReactJS based on text segmentation, Hadoop MapReduce indexing, and tf-idf scores. Allows users to query Wikipedia pages and return a list of results ordered by relevance.<br />
-                <br />
-                <i>Source code is private; email kaelynl@umich.edu for access or inquiries.</i>
-            </>
-        ),
-        tags: ["Python", "React", "Hadoop", "AWS"]
+    {
+      name: "Instagram Clone",
+      shortDesc: "Dynamic Instagram clone featuring user accounts, photo uploads, likes, and comments.",
+      longDesc: (
+        <>
+          Developed a dynamic web app using ReactJS, Flask, and custom REST APIs, emulating Instagram features like photo uploads, likes, comments, user following, and session management. Includes infinite scrolling and was deployed to AWS for scalability.<br />
+          <br />
+          <i>Source code is private; email kaelynl@umich.edu for access or inquiries.</i>
+        </>
+      ),
+      tags: ["Python", "React", "SQLite", "AWS"]
+    },
+    {
+      name: "Wikipedia Search Engine and Custom MapReduce Server",
+      shortDesc: "Scalable search engine and fault-tolerant MapReduce server, supporting efficient text processing, indexing, and ranking with tf-idf scores.",
+      longDesc: (
+        <>
+          Developed a multi-worker and fault-tolerant MapReduce server in Python using threading and TCP to process user-submitted tasks. Built a scalable search engine from scratch in ReactJS based on text segmentation, Hadoop MapReduce indexing, and tf-idf scores. Allows users to query Wikipedia pages and return a list of results ordered by relevance.<br />
+          <br />
+          <i>Source code is private; email kaelynl@umich.edu for access or inquiries.</i>
+        </>
+      ),
+      tags: ["Python", "React", "Hadoop", "AWS"]
     },
     {
       name: "LC-2K",
       shortDesc: "Custom RISC architecture involving pipeline assembly, cache simulation, and linking.",
       longDesc: (
-          <>
-              Developed a custom RISC architecture that converts assembly code into machine code for execution simulation. Includes a pipeline assembler with forwarding and stall mechanisms to manage hazards, a cache simulator supporting various mapping techniques, and a linker to combine object files into executables.<br />
-              <br />
-              <i>Source code is private; email kaelynl@umich.edu for access or inquiries.</i>
-          </>
+        <>
+          Developed a custom RISC architecture that converts assembly code into machine code for execution simulation. Includes a pipeline assembler with forwarding and stall mechanisms to manage hazards, a cache simulator supporting various mapping techniques, and a linker to combine object files into executables.<br />
+          <br />
+          <i>Source code is private; email kaelynl@umich.edu for access or inquiries.</i>
+        </>
       ),
       tags: ["C"]
     },
@@ -49,16 +49,16 @@ export default function Projects() {
       shortDesc: "A series of C++ projects demonstrating proficiency in data structures, algorithms, and optimization techniques.",
       longDesc: (
         <>
-            <strong>Word Morphing:</strong> Designed BFS and DFS algorithms for customizable word transformations (e.g., letter changes, insertions, deletions, swaps), enabling efficient graph search and route tracing within complex dictionaries.<br />
-            <strong>Mine Escape:</strong> Developed a pathfinding simulation employing priority-based search algorithms, custom priority queues using binary heaps and sorted arrays, optimizing tile discovery in grid-based environments.<br />
-            <strong>Database Query Language:</strong> Built a command-line shell emulating a relational database, featuring a simplified SQL-like query language and leveraging dynamic arrays, hash tables, and binary search trees for efficient table management and query execution.<br />
-            <strong>Drone Delivery:</strong> Implemented fast route tracking across a simulated campus using MST, branch and bound, and Kruskal’s algorithms, alongside heuristic approaches such as TSP and Knapsack to achieve near-optimal results.<br />
-            <strong>Euchre:</strong> Developed a text-based simulator of popular card game, Euchre, supporting gameplay for up to 4 AI/human players to learn about abstract data types, object-oriented programming, and polymorphism.<br />
-            <br />
-            <i>Source code is private; email kaelynl@umich.edu for access or inquiries.</i>
+          <strong>Word Morphing:</strong> Designed BFS and DFS algorithms for customizable word transformations (e.g., letter changes, insertions, deletions, swaps), enabling efficient graph search and route tracing within complex dictionaries.<br />
+          <strong>Mine Escape:</strong> Developed a pathfinding simulation employing priority-based search algorithms, custom priority queues using binary heaps and sorted arrays, optimizing tile discovery in grid-based environments.<br />
+          <strong>Database Query Language:</strong> Built a command-line shell emulating a relational database, featuring a simplified SQL-like query language and leveraging dynamic arrays, hash tables, and binary search trees for efficient table management and query execution.<br />
+          <strong>Drone Delivery:</strong> Implemented fast route tracking across a simulated campus using MST, branch and bound, and Kruskal’s algorithms, alongside heuristic approaches such as TSP and Knapsack to achieve near-optimal results.<br />
+          <strong>Euchre:</strong> Developed a text-based simulator of popular card game, Euchre, supporting gameplay for up to 4 AI/human players to learn about abstract data types, object-oriented programming, and polymorphism.<br />
+          <br />
+          <i>Source code is private; email kaelynl@umich.edu for access or inquiries.</i>
         </>
-      ),    
-      tags: ["C++"],
+      ),
+      tags: ["C++"]
     },
     {
       name: "Personal Website",
@@ -159,7 +159,19 @@ export default function Projects() {
                 <img src={selectedProject.image} alt={selectedProject.name} className="popup-image" />
               )}
               <div className="popup-details">
-                <h2>{selectedProject.name}</h2>
+                <h2>
+                  {selectedProject.name === "Personal Website" ? (
+                    <a
+                      href="https://github.com/kaelynlong/personal-website"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {selectedProject.name}
+                    </a>
+                  ) : (
+                    selectedProject.name
+                  )}
+                </h2>
                 <p>{selectedProject.longDesc}</p>
                 <div className="tags">
                   {selectedProject.tags.map((tag, idx) => (

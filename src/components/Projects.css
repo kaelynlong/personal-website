@@ -95,21 +95,6 @@
     margin-top: 1rem;
 }
 
-/* Arrow for View All */
-.project-arrow {
-    opacity: 0;
-    transform: translateX(-10px);
-    transition: transform 0.3s ease, opacity 0.3s ease;
-    color: #000000;
-    font-size: 1.2rem;
-    margin-left: 0.5rem;
-}
-
-.view-all:hover .project-arrow {
-    opacity: 1;
-    transform: translateX(0);
-}
-
 .tag {
     background-color: #000000;
     color: #ffffff;
@@ -206,6 +191,31 @@
     margin-bottom: 1rem;
     object-fit: cover; /* Image scaling */
   }  
+
+/* Specific style for the clickable Personal Website link in the popup */
+.project-popup h2 a {
+    color: inherit; /* Same color as other text */
+    text-decoration: none; /* Remove underline */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Same hover effect as arrow */
+    display: inline-flex; /* Keeps alignment */
+}
+
+.project-popup h2 a:hover {
+    opacity: 1; /* Same opacity on hover */
+    transform: translateX(5px); /* Arrow-like movement */
+}
+
+/* Preserve View All arrow behavior */
+.view-all .project-arrow {
+    opacity: 0; /* Hidden by default */
+    transform: translateX(-10px); /* Initial position */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition */
+}
+
+.view-all:hover .project-arrow {
+    opacity: 1; /* Fully visible on hover */
+    transform: translateX(0); /* Move to original position */
+}
 
 /* 1 column per row on small screens */
 @media (max-width: 768px) {
