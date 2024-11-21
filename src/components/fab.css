@@ -1,0 +1,39 @@
+.fab-container {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 1000;
+}
+
+/* Main Button Styling */
+.fab {
+    background-color: #1c1d1d; /* Black background */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 2.6rem;
+    height: 2.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.fab:hover {
+    background-color: #ecdce4; /* Pink on hover */
+    transform: scale(1.1); /* Slightly larger */
+}
+
+/* Icon Styling */
+.fab-icon {
+    width: 18px;
+    height: 18px;
+    filter: invert(1); /* Makes black icon white */
+    transition: filter 0.2s ease-in-out;
+}
+
+.fab:hover .fab-icon {
+    filter: invert(0); /* Turns back to original black on hover */
+}

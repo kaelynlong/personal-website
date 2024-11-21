@@ -17,8 +17,7 @@ export default function Projects() {
     {
       name: "Wikipedia Search Engine and Custom MapReduce Server",
       shortDesc: "Scalable search engine and fault-tolerant MapReduce server, supporting efficient text processing, indexing, and ranking with tf-idf scores.",
-      longDesc: 
-        "Developed a multi-worker and fault-tolerant MapReduce server in Python using threading and TCP to process user-submitted tasks. Built a scalable search engine from scratch in ReactJS based on text segmentation, Hadoop MapReduce indexing, and tf-idf scores. Allows users to query Wikipedia pages and return a list of results ordered by relevance.",
+      longDesc: "Developed a multi-worker and fault-tolerant MapReduce server in Python using threading and TCP to process user-submitted tasks. Built a scalable search engine from scratch in ReactJS based on text segmentation, Hadoop MapReduce indexing, and tf-idf scores. Allows users to query Wikipedia pages and return a list of results ordered by relevance.",
       tags: ["Python", "React", "Hadoop", "AWS"]
     },
     {
@@ -40,9 +39,9 @@ export default function Projects() {
       ),
       tags: ["C++"],
     },
-    { 
-      name: "Personal Website", 
-      shortDesc: "Personal portfolio showcasing projects, skills, and experience.", 
+    {
+      name: "Personal Website",
+      shortDesc: "Personal portfolio showcasing projects, skills, and experience.",
       longDesc: "You're viewing it! Designed and built from scratch to highlight professional experience, projects, and skills while incorporating animations and interactive elements. Features accessibility optimizations to enhance user experience, including keyboard navigation, dark mode, reduced motion support, and a fully responsive design.",
       tags: ["Next.js", "CSS", "JavaScript"],
       image: "/images/personalPortfolio.png"
@@ -52,7 +51,7 @@ export default function Projects() {
 
   const handleProjectClick = (project) => {
     if (project.name === "View All") {
-      window.open("https://github.com/kaelynlong?tab=repositories", "_blank"); 
+      window.open("https://github.com/kaelynlong?tab=repositories", "_blank");
     } else {
       setSelectedProject(project);
     }
@@ -98,9 +97,9 @@ export default function Projects() {
                 project.name === "View All" ? "view-all" : ""
               }`}
               onClick={() => handleProjectClick(project)}
-              tabIndex={0} // Add tabIndex here for keyboard focus
+              tabIndex={0}
               onKeyDown={(e) => {
-                if (e.key === "Enter") handleProjectClick(project); // Allow Enter key to trigger click
+                if (e.key === "Enter") handleProjectClick(project);
               }}
             >
               <div className="project-info">

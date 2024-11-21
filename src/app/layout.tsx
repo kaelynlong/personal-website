@@ -1,4 +1,5 @@
 import '../app/globals.css';
+import FloatingActions from '../components/fab';
 
 export const metadata = {
   title: 'Personal Website Portfolio',
@@ -15,6 +16,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body>
         {children}
+        <FloatingActions />
       </body>
     </html>
   );
