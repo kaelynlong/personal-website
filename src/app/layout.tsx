@@ -1,8 +1,8 @@
 import '../app/globals.css';
 
 export const metadata = {
-  title: 'Personal Website Portfolio',
-  description: 'Kaelyn Long Lin',
+  title: 'Kaelyn Long Lin',
+  description: 'Personal Website Portfolio',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
