@@ -1,5 +1,4 @@
 import '../app/globals.css';
-import FloatingActions from '../components/fab';
 
 export const metadata = {
   title: 'Personal Website Portfolio',
