@@ -15,7 +15,7 @@ export default function Projects() {
         <>
           Developed a dynamic web app using ReactJS, Flask, and custom REST APIs, emulating Instagram features like photo uploads, likes, comments, user following, and session management. Includes infinite scrolling and was deployed to AWS for scalability.<br />
           <br />
-          <i>Source code is private; email kaelynl@umich.edu for access or inquiries.</i>
+          <i>Source code is private; contact kaelynl@umich.edu for access or inquiries.</i>
         </>
       ),
       tags: ["Python", "React", "SQLite", "AWS"]
@@ -27,7 +27,7 @@ export default function Projects() {
         <>
           Developed a multi-worker and fault-tolerant MapReduce server in Python using threading and TCP to process user-submitted tasks. Built a scalable search engine from scratch in ReactJS based on text segmentation, Hadoop MapReduce indexing, and tf-idf scores. Allows users to query Wikipedia pages and return a list of results ordered by relevance.<br />
           <br />
-          <i>Source code is private; email kaelynl@umich.edu for access or inquiries.</i>
+          <i>Source code is private; contact kaelynl@umich.edu for access or inquiries.</i>
         </>
       ),
       tags: ["Python", "React", "Hadoop", "AWS"]
@@ -39,7 +39,7 @@ export default function Projects() {
         <>
           Developed a custom RISC architecture that converts assembly code into machine code for execution simulation. Includes a pipeline assembler with forwarding and stall mechanisms to manage hazards, a cache simulator supporting various mapping techniques, and a linker to combine object files into executables.<br />
           <br />
-          <i>Source code is private; email kaelynl@umich.edu for access or inquiries.</i>
+          <i>Source code is private; contact kaelynl@umich.edu for access or inquiries.</i>
         </>
       ),
       tags: ["C"]
@@ -55,7 +55,7 @@ export default function Projects() {
           <strong>Drone Delivery:</strong> Implemented fast route tracking across a simulated campus using MST, branch and bound, and Kruskal’s algorithms, alongside heuristic approaches such as TSP and Knapsack to achieve near-optimal results.<br />
           <strong>Euchre:</strong> Developed a text-based simulator of popular card game, Euchre, supporting gameplay for up to 4 AI/human players to learn about abstract data types, object-oriented programming, and polymorphism.<br />
           <br />
-          <i>Source code is private; email kaelynl@umich.edu for access or inquiries.</i>
+          <i>Source code is private; contact kaelynl@umich.edu for access or inquiries.</i>
         </>
       ),
       tags: ["C++"]
