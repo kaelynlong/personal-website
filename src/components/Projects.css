@@ -194,28 +194,32 @@
 
 /* Specific style for the clickable Personal Website link in the popup */
 .project-popup h2 a {
-    color: inherit; /* Same color as other text */
-    text-decoration: none; /* Remove underline */
-    transition: transform 0.3s ease, opacity 0.3s ease; /* Same hover effect as arrow */
-    display: inline-flex; /* Keeps alignment */
+    color: inherit;
+    text-decoration: none; 
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    display: inline-flex;
 }
 
 .project-popup h2 a:hover {
-    opacity: 1; /* Same opacity on hover */
-    transform: translateX(5px); /* Arrow-like movement */
+    opacity: 1;
+    transform: translateX(5px);
 }
 
-/* Preserve View All arrow behavior */
-.view-all .project-arrow {
-    opacity: 0; /* Hidden by default */
-    transform: translateX(-10px); /* Initial position */
-    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition */
+/* Style for the arrow image */
+.project-arrow img {
+    width: 25px;
+    height: 30px;
+    transform: rotate(180deg) translateX(0);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0; 
 }
 
-.view-all:hover .project-arrow {
-    opacity: 1; /* Fully visible on hover */
-    transform: translateX(0); /* Move to original position */
+/* Arrow transition on hover */
+.view-all:hover .project-arrow img {
+    transform: rotate(180deg) translateX(20px);
+    opacity: 1;
 }
+
 
 /* 1 column per row on small screens */
 @media (max-width: 768px) {
