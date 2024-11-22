@@ -64,3 +64,25 @@
         width: 100%;
     }
 }
+
+@media (prefers-reduced-motion: reduce) {
+    .skills-item {
+        transform: none;
+        transition: none;
+        opacity: 1;
+    }
+
+    .skills-item.fade-in {
+        transform: none;
+        transition: none;
+        opacity: 1;
+    }
+
+    .skills-icon {
+        transition: none;
+    }
+
+    .skills-text {
+        transition: none;
+    }
+}

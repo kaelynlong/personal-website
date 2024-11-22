@@ -64,3 +64,24 @@
         min-width: 20rem;
     }
 }
+
+/* Reduce motion for animations */
+@media (prefers-reduced-motion: reduce) {
+    .about-description {
+        transform: none;
+        transition: none;
+    }
+
+    .about-description.fade-in {
+        opacity: 1;
+        transform: none;
+    }
+
+    .resume-button {
+        transition: none;
+    }
+
+    .resume-button:hover {
+        transform: none;
+    }
+}

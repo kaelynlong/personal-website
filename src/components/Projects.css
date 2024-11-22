@@ -247,3 +247,29 @@
         width: 100%;
     }
 }
+
+@media (prefers-reduced-motion: reduce) {
+    .project-tile {
+        transform: none;
+        transition: none;
+        opacity: 1;
+    }
+
+    .project-tile.fade-in {
+        transform: none;
+        transition: none;
+        opacity: 1;
+    }
+
+    .close-button img {
+        transition: none;
+    }
+
+    .project-arrow img {
+        transition: none;
+    }
+
+    .project-popup h2 a {
+        transition: none;
+    }
+}

@@ -207,3 +207,24 @@
         transform: scale(0.8);
     }
 }
+
+@media (prefers-reduced-motion: reduce) {
+    .sidebar {
+        transition: none;
+        transform: translateX(100%);
+    }
+
+    .sidebar.open {
+        transform: translateX(0);
+        transition: none;
+    }
+
+    .sidebar-overlay {
+        transition: none; /* Remove fade-in and fade-out animation */
+    }
+
+    .sidebar-overlay.open {
+        opacity: 1; /* Maintain visibility without transition */
+        transition: none; /* Disable fade-out animation */
+    }
+}
