@@ -124,14 +124,14 @@ export default function Projects() {
               }}
             >
               <div className="project-info">
-                <h3>
+                <h2>
                   {project.name}
                   {project.name === "View All" && (
                     <span className="project-arrow">
                       <img src="/images/arrow.png" alt="Arrow" />
                     </span>
                   )}
-                </h3>
+                </h2>
                 <p>{project.shortDesc}</p>
                 {project.tags && (
                   <div className="tags">

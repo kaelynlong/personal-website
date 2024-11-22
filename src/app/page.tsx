@@ -13,21 +13,23 @@ export default function HomePage() {
   return (
     <>
       <Navbar />
-      <div style={{ padding: '2rem', textAlign: 'center' }}>
-        <About />
-      </div>
-      <div style={{ padding: '2rem', textAlign: 'center' }}>
-        <Skills />
-      </div>
-      <div style={{ padding: '2rem', textAlign: 'center' }}>
-        <Education />
-      </div>
-      <div style={{ padding: '2rem', textAlign: 'center' }}>
-        <Experience />
-      </div>
-      <div style={{ padding: '2rem', textAlign: 'center' }}>
-        <Projects />
-      </div>
+      <main style={{ padding: '2rem', textAlign: 'center' }}>
+        <div>
+          <About />
+        </div>
+        <div>
+          <Skills />
+        </div>
+        <div>
+          <Education />
+        </div>
+        <div>
+          <Experience />
+        </div>
+        <div>
+          <Projects />
+        </div>
+      </main>
       <Footer />
     </>
   );

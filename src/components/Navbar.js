@@ -17,13 +17,13 @@ export default function Navbar() {
     return (
         <>
             {/* Announcement Bar */}
-            <div className="announcement-bar">
+            <aside className="announcement-bar" aria-label="Announcement">
                 ˚ ༘♡ ⋆｡˚ Last updated Nov 2024 ˚୨୧⋆｡˚ ⋆
-            </div>
+            </aside>
 
             {/* Navbar */}
             <header className="navbar">
-                <nav className="navbar-content">
+                <nav className="navbar-content" aria-label="Main navigation">
                     <div className="navbar-logo">
                         <img
                             src="/images/kaelynLong1.png"
@@ -83,49 +83,52 @@ export default function Navbar() {
                 <div className="navbar-divider"></div>
             </header>
 
-            {/* Sidebar Overlay and Sidebar */}
-            <div
-                className={`sidebar-overlay ${
-                    isSidebarOpen ? "open" : ""
-                }`}
-                onClick={closeSidebar}
-            ></div>
-            <div className={`sidebar ${isSidebarOpen ? "open" : ""}`}>
-                <button className="close-button" onClick={closeSidebar}>
-                    <img
-                        src="/images/closeButton.png"
-                        alt="Close Sidebar"
-                        className="close-button-image"
-                    />
-                </button>
-                <ul className="sidebar-links">
-                    <li>
-                        <a href="#about" onClick={closeSidebar}>
-                            ABOUT
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#skills" onClick={closeSidebar}>
-                            SKILLS
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#education" onClick={closeSidebar}>
-                            EDUCATION
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#experience" onClick={closeSidebar}>
-                            EXPERIENCE
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#projects" onClick={closeSidebar}>
-                            PROJECTS
-                        </a>
-                    </li>
-                </ul>
-            </div>
+            {/* Sidebar */}
+            <nav
+                className={`sidebar ${isSidebarOpen ? "open" : ""}`}
+                aria-label="Sidebar navigation"
+            >
+                <div
+                    className={`sidebar-overlay ${isSidebarOpen ? "open" : ""}`}
+                    onClick={closeSidebar}
+                ></div>
+                <div className="sidebar-content">
+                    <button className="close-button" onClick={closeSidebar}>
+                        <img
+                            src="/images/closeButton.png"
+                            alt="Close Sidebar"
+                            className="close-button-image"
+                        />
+                    </button>
+                    <ul className="sidebar-links">
+                        <li>
+                            <a href="#about" onClick={closeSidebar}>
+                                ABOUT
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#skills" onClick={closeSidebar}>
+                                SKILLS
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#education" onClick={closeSidebar}>
+                                EDUCATION
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#experience" onClick={closeSidebar}>
+                                EXPERIENCE
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#projects" onClick={closeSidebar}>
+                                PROJECTS
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </>
     );
 }
