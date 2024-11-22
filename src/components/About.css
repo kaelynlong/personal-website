@@ -27,7 +27,7 @@
     margin-top: 2rem;
     text-align: left;
     min-width: 20rem;
-    max-width: 50rem;
+    width: 50rem;
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.8s ease, transform 0.8s ease;
@@ -35,7 +35,7 @@
 
 .about-description.fade-in {
     opacity: 1;
-    transform: translateY(0); /* Back to original position */
+    transform: translateY(0);
 }
 
 /* Resume Button */
@@ -56,4 +56,11 @@
     background-color: #ecdce4;
     color: #000000;
     transform: scale(1.05);
+}
+
+@media (max-width: 50rem) {
+    .about-description {
+        width: 100%;
+        min-width: 20rem;
+    }
 }

@@ -16,8 +16,7 @@
 }
 
 .projects-container {
-    max-width: 50rem;
-    width: 100%;
+    width: 50rem;
 }
 
 .projects-section h1 {
@@ -32,9 +31,9 @@
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Max 2 columns */
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem; 
-    justify-content: center; /* Center tiles if odd number */
+    justify-content: center;
 }
 
 .project-tile {
@@ -128,12 +127,12 @@
 .popup-content {
     background-color: white;
     padding: 2rem;
-    width: 100%;
-    max-width: 900px;
+    width: 900px;
     position: relative;
     text-align: left;
     border: 1px solid #000;
     padding-top: 3.5rem;
+    box-sizing: border-box;
 }
 
 .close-button {
@@ -234,5 +233,17 @@
 @media (max-width: 768px) {
     .projects-grid {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 900px) {
+    .popup-content {
+        width: 90%;
+    }
+}
+
+@media (max-width: 50rem) {
+    .projects-container {
+        width: 100%;
     }
 }

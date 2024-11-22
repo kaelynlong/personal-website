@@ -46,12 +46,6 @@
     transform: scale(2);
 }
 
-@media (max-width: 768px) {
-    .logo-image {
-        transform: scale(1.5);
-    }
-}
-
 /* Navbar Links */
 .navbar-links {
     display: flex;
@@ -61,24 +55,6 @@
     justify-content: center;
     margin: 0 6rem;
     line-height: 1;
-}
-
-/* Adjust padding for smaller screens */
-@media (max-width: 768px) {
-    .navbar-content {
-        padding-top: 2rem;
-        padding-bottom: 1rem;
-    }
-    .navbar-links {
-        display: none;
-    }
-}
-
-/* Show the links on larger screens */
-@media (min-width: 769px) {
-    .hamburger-menu {
-        display: none;
-    }
 }
 
 /* Navbar Links Styling */
@@ -118,15 +94,6 @@
     width: 35px;
     height: 40px;
     cursor: pointer;
-}
-
-/* Show hamburger menu on smaller screens */
-@media (max-width: 768px) {
-    .navbar-icons .navbar-icon,
-    .hamburger-menu {
-        display: block;
-        transform: scale(0.8);
-    }
 }
 
 /* Sidebar Overlay */
@@ -206,4 +173,37 @@
     height: 1px;
     background-color: #1C1D1D;
     width: 100%;
+}
+
+@media (max-width: 768px) {
+    .logo-image {
+        transform: scale(1.5);
+    }
+}
+
+/* Adjust padding for smaller screens */
+@media (max-width: 768px) {
+    .navbar-content {
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+    }
+    .navbar-links {
+        display: none;
+    }
+}
+
+/* Show the links on larger screens */
+@media (min-width: 769px) {
+    .hamburger-menu {
+        display: none;
+    }
+}
+
+/* Show hamburger menu on smaller screens */
+@media (max-width: 768px) {
+    .navbar-icons .navbar-icon,
+    .hamburger-menu {
+        display: block;
+        transform: scale(0.8);
+    }
 }

@@ -18,12 +18,13 @@
 
 .footer-content {
     margin: 0 auto;
-    width: 100%;
-    max-width: 1200px;
+    width: 1200px;
+    min-width: 20rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    box-sizing: border-box;
 }
 
 .footer-info{
@@ -56,4 +57,10 @@
     margin-top: 1rem;
     padding-bottom: 2rem;
     text-align: center;
+}
+
+@media (max-width: 1200px) {
+    .footer-content {
+        width: 80%;
+    }
 }

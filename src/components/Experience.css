@@ -28,7 +28,17 @@
     position: relative;
     padding-left: 2rem;
     border-left: 1px solid #1C1D1D;
-    max-width: 50rem;
+    width: 50rem;
+    min-width: 20rem;
+    margin: 0 auto;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 2rem;
+    border-left: 1px solid #1C1D1D;
+    width: 50rem;
+    min-width: 20rem;
     margin: 0 auto;
 }
 
@@ -106,4 +116,10 @@
 .fade-item.fade-in, .experience-timeline-item.fade-in {
     opacity: 1;
     transform: translateY(0);
+}
+
+@media (max-width: 50rem) {
+    .timeline {
+        width: 100%;
+    }
 }

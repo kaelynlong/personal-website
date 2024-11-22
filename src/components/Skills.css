@@ -33,13 +33,13 @@
 .skills-item {
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* Align to left */
-    width: 100%;
-    max-width: 50rem;
+    justify-content: flex-start;
+    width: 50rem;
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.8s ease, transform 0.8s ease;
 }
+
 
 .skills-item.fade-in {
     opacity: 1;
@@ -57,4 +57,10 @@
     flex: 1;
     text-align: left;
     font-size: 1rem;
+}
+
+@media (max-width: 50rem) {
+    .skills-item {
+        width: 100%;
+    }
 }
