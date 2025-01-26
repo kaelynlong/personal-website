@@ -45,7 +45,7 @@ export default function Education() {
             <p><strong>Major:</strong> Computer Science</p>
             <p><strong>Minor:</strong> UX Design and Statistics</p>
             <p>
-              <strong>Relevant Coursework:</strong> Data Structures and Algorithms, Computer Organization and Hardware, Web Applications and Systems, Computer Science Pragmatics, Robotics Mechanisms, Statistical Computing, Discrete Mathematics, Applied Linear Algebra, Probability and Statistics for Engineers, Calculus I-III
+              <strong>Relevant Coursework:</strong> Data Structures and Algorithms, Operating Systems, Computer Organization and Hardware, Web Applications and Systems, Computer Science Pragmatics, Robotics Mechanisms, Statistical Computing, Discrete Mathematics, Applied Linear Algebra, Probability and Statistics for Engineers, Calculus I-III
             </p>
           </div>
         </div>

@@ -34,6 +34,20 @@ export default function Experience() {
     <div id="experience" className="experience-section">
       <h1 className={`fade-item ${visibleSections.includes("0") ? "fade-in" : ""}`}>EXPERIENCE</h1>
       <div className="timeline">
+      <div
+          className={`experience-timeline-item ${visibleSections.includes("2") ? "fade-in" : ""}`}
+        >
+          <div className="timeline-dot"></div>
+          <div className="timeline-connector"></div>
+          <div className="timeline-content">
+            <h2>Amazon</h2>
+            <p><em>Software Development Engineer Intern| Seattle, WA | Summer 2025</em></p>
+            <ul className="indented-list">
+              <li>Incoming 2025</li>
+            </ul>
+          </div>
+        </div>
+
         <div
           className={`experience-timeline-item ${visibleSections.includes("2") ? "fade-in" : ""}`}
         >
