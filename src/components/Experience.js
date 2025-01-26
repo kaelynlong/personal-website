@@ -41,7 +41,7 @@ export default function Experience() {
           <div className="timeline-connector"></div>
           <div className="timeline-content">
             <h2>Amazon</h2>
-            <p><em>Software Development Engineer Intern| Seattle, WA | Summer 2025</em></p>
+            <p><em>Software Development Engineer Intern | Seattle, WA | Summer 2025</em></p>
             <ul className="indented-list">
               <li>Incoming 2025</li>
             </ul>
