@@ -43,7 +43,7 @@ export default function Education() {
             <h2>University of Michigan</h2>
             <p><em>Bachelors Degree | 2022 - 2026</em></p>
             <p><strong>Major:</strong> Computer Science</p>
-            <p><strong>Minor:</strong> UX Design and Statistics</p>
+            <p><strong>Minor:</strong> UX Design</p>
             <p>
               <strong>Relevant Coursework:</strong> Data Structures and Algorithms, Operating Systems, Computer Organization and Hardware, Web Applications and Systems, Computer Science Pragmatics, Robotics Mechanisms, Statistical Computing, Discrete Mathematics, Applied Linear Algebra, Probability and Statistics for Engineers, Calculus I-III
             </p>

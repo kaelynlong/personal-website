@@ -64,7 +64,7 @@ export default function Projects() {
       name: "Personal Website",
       shortDesc: "Personal portfolio showcasing projects, skills, and experience.",
       longDesc: "You're viewing it! Designed and built from scratch to highlight professional experience, projects, and skills while incorporating animations and interactive elements. Features accessibility optimizations to enhance user experience, including keyboard navigation, reduced motion support, and a fully responsive design.",
-      tags: ["Next.js", "CSS", "JavaScript"],
+      tags: ["Next.js", "CSS"],
       image: "/images/personalWebsite.png"
     },
     { name: "View All", shortDesc: "Explore more projects on GitHub" },

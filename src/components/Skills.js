@@ -44,12 +44,6 @@ export default function Skills() {
             <strong>Software:</strong> VSCode | Github | Git | AWS | Jira | Confluence | Tableau | Jupyter Notebook | Excel
           </div>
         </div>
-        <div className={`skills-item ${visibleSections.includes("2") ? "fade-in" : ""}`}>
-          <img src="/images/librariesIcon.png" alt="Libraries Icon" className="skills-icon" />
-          <div className="skills-text">
-            <strong>Libraries:</strong> React | Node | Jinja | Flask | JQuery | SQLite | Bootstrap | TensorFlow
-          </div>
-        </div>
       </div>
     </div>
   );
