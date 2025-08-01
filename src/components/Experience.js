@@ -35,18 +35,20 @@ export default function Experience() {
       <h1 className={`fade-item ${visibleSections.includes("0") ? "fade-in" : ""}`}>EXPERIENCE</h1>
       <div className="timeline">
       <div
-          className={`experience-timeline-item ${visibleSections.includes("2") ? "fade-in" : ""}`}
-        >
-          <div className="timeline-dot"></div>
-          <div className="timeline-connector"></div>
-          <div className="timeline-content">
-            <h2>Amazon</h2>
-            <p><em>Software Development Engineer Intern | Seattle, WA | May - Aug 2025</em></p>
-            <ul className="indented-list">
-              <li>Incoming Summer 2025</li>
-            </ul>
-          </div>
+        className={`experience-timeline-item ${visibleSections.includes("2") ? "fade-in" : ""}`}
+      >
+        <div className="timeline-dot"></div>
+        <div className="timeline-connector"></div>
+        <div className="timeline-content">
+          <h2>Amazon</h2>
+          <p><em>Software Development Engineer Intern | Seattle, WA | May - Aug 2025</em></p>
+          <ul className="indented-list">
+            <li>Built and deployed a Java-based AWS Lambda CloudFormation Hook that automatically classifies safety of IAM roles, users, and groups for deletion using Access Advisor data, reducing manual audits and preventing accidental deletions in production</li>
+            <li>Extended solution to handle access keys, MFA devices, group memberships, and detached managed policies, enabling automated cleanup aligned with AWS IAM constraints through ARN normalization and policy detachment logic</li>
+            <li>Led end-to-end development and testing, designing a fault-tolerant evaluation engine with retry-safe logic, structured CloudWatch logging, and full JUnit5 test coverage for API edge cases, throttling, and propagation delays</li>
+          </ul>
         </div>
+      </div>
 
         <div
           className={`experience-timeline-item ${visibleSections.includes("2") ? "fade-in" : ""}`}
@@ -72,10 +74,9 @@ export default function Experience() {
             <h2>Akima</h2>
             <p><em>Software Engineering Intern | Herndon, VA | Jun - Aug 2024</em></p>
             <ul className="indented-list">
-              <li>Designed and developed a robust web-based E911 dispatch system for 179 Air Force bases from scratch, leveraging AWS, React, Spring Boot, and Tableau to address 300+ support tickets</li>
-              <li>Automated base and ticket tracking with MySQL and Python by creating data validation scripts, ETL pipelines, and real-time API integrations</li>
-              <li>Led a cross-functional team of 7 as Scrum Master, facilitating Agile practices, refining backlogs, and driving on-time delivery of the project</li>
-              <li>Presented the MVP to 50+ stakeholders, including the CEO, senior leadership, and military teams, effectively communicating progress, aligning objectives, and securing buy-in for future phases</li>
+              <li>Led a team of 7 as Scrum Master to engineer a web-based Air Force E911 dispatch software system from scratch for 179 bases using AWS, React, Spring Boot, and Tableau, processing over 300 support tickets</li>
+              <li>Implemented MySQL database and utilized Python scripting to manage and track bases and tickets, automating updates</li>
+              <li>Presented to over 50 stakeholders, including the CEO, group presidents, and military teams, showcasing the functional MVP</li>
             </ul>
           </div>
         </div>
@@ -89,8 +90,8 @@ export default function Experience() {
             <h2>Center for Academic Innovation at UofM</h2>
             <p><em>XR Researcher | Ann Arbor, MI | Oct 2024 - May 2024</em></p>
             <ul className="indented-list">
-              <li>Implemented audio functionalities for vocal interaction with virtual patients in a VR application using Google Cloud Speech API, Unreal Engine, and C++</li>
-              <li>Collaborated with medical experts and professors to lead iterative user testing sessions, gathering extensive feedback and analyzing data to drive continuous design improvements and enhance user experience</li>
+              <li>Implemented audio functionalities for vocal interaction with virtual patients in a VR application using Google Cloud Speech API, Unreal Engine, and C++, capturing and processing auction input with optimized settings</li>
+              <li>Collaborated with medical experts and professors to lead iterative user testing sessions and drive continuous design improvements</li>
               <li>Oversaw financial and HR operations for the XR program, managing 32 projects and optimizing performance across 17 schools</li>
             </ul>
           </div>
