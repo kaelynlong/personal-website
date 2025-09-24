@@ -9,6 +9,30 @@ export default function Projects() {
 
   const projects = [
     {
+      name: "Thread Library",
+      shortDesc: "User-level multithreading library with preemptive scheduling, mutexes, and condition variables.",
+      longDesc: (
+        <>
+          Built a user-level threading library in C++ that supports thread creation, context switching, and synchronization primitives. The runtime implements a FIFO scheduler with atomic interrupt masking to keep scheduling decisions deterministic under concurrency. Threads coordinate with mutexes and condition variables that honor blocking semantics and avoid lost wakeups, enabling safe composition of concurrent workloads.<br />
+          <br />
+          <i>Source code is private; contact kaelynl@umich.edu for access or inquiries.</i>
+        </>
+      ),
+      tags: ["C++", "OS"]
+    },
+    {
+      name: "Virtual Memory Pager",
+      shortDesc: "Clock-based pager with multi-process support, copy-on-write, and robust page-fault handling.",
+      longDesc: (
+        <>
+          Implemented a virtual memory pager that manages file-backed and swap-backed pages across multiple processes. Uses a clock eviction policy that considers reference and dirty state to choose victims efficiently. Copy-on-write semantics and precise page-fault handling preserve data consistency under high concurrency while minimizing unnecessary I/O and write-amplification.<br />
+          <br />
+          <i>Source code is private; contact kaelynl@umich.edu for access or inquiries.</i>
+        </>
+      ),
+      tags: ["C++", "OS"]
+    },
+    {
       name: "Instagram Clone",
       shortDesc: "Dynamic Instagram clone featuring user accounts, photo uploads, likes, and comments.",
       longDesc: (
@@ -65,7 +89,6 @@ export default function Projects() {
       shortDesc: "Personal portfolio showcasing projects, skills, and experience.",
       longDesc: "You're viewing it! Designed and built from scratch to highlight professional experience, projects, and skills while incorporating animations and interactive elements. Features accessibility optimizations to enhance user experience, including keyboard navigation, reduced motion support, and a fully responsive design.",
       tags: ["Next.js", "CSS"],
-      image: "/images/personalWebsite.png"
     },
     { name: "View All", shortDesc: "Explore more projects on GitHub" },
   ];

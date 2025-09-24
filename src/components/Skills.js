@@ -35,13 +35,13 @@ export default function Skills() {
         <div className={`skills-item ${visibleSections.includes("0") ? "fade-in" : ""}`}>
           <img src="/images/languagesIcon.png" alt="Languages Icon" className="skills-icon" />
           <div className="skills-text">
-            <strong>Languages:</strong> C/C++ | Java | Python | HTML | CSS | JavaScript | Shell scripting | SQL | R
+            <strong>Languages:</strong> C++ | C | Java | Python | Typescript | SQL | Shell | R
           </div>
         </div>
         <div className={`skills-item ${visibleSections.includes("1") ? "fade-in" : ""}`}>
           <img src="/images/softwareIcon.png" alt="Software Icon" className="skills-icon" />
           <div className="skills-text">
-            <strong>Software:</strong> VSCode | IntelliJ | Github | Git | AWS | Jira | Confluence | Tableau | Jupyter | Excel
+            <strong>Technologies:</strong>  AWS | React | Spring Boot | Flask | Unreal | Git | Jupyter | Tableau
           </div>
         </div>
       </div>

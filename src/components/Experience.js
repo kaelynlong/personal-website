@@ -43,9 +43,10 @@ export default function Experience() {
           <h2>Amazon</h2>
           <p><em>Software Development Engineer Intern | Seattle, WA | May - Aug 2025</em></p>
           <ul className="indented-list">
-            <li>Built and deployed a Java-based AWS Lambda CloudFormation Hook that automatically classifies safety of IAM roles, users, and groups for deletion using Access Advisor data, reducing manual audits and preventing accidental deletions in production</li>
-            <li>Extended solution to handle access keys, MFA devices, group memberships, and detached managed policies, enabling automated cleanup aligned with AWS IAM constraints through ARN normalization and policy detachment logic</li>
-            <li>Led end-to-end development and testing, designing a fault-tolerant evaluation engine with retry-safe logic, structured CloudWatch logging, and full JUnit5 test coverage for API edge cases, throttling, and propagation delays</li>
+            <li>Built and deployed a Java-based CloudFormation Hook (Lambda) that classified IAM roles/users for safe deletion, reducing review time by 80% and lowering misconfiguration risk in production.</li>
+            <li>Implemented a fault-tolerant evaluation engine with retry/backoff and structured logging, ensuring reliability under high API loads and throttling.</li>
+            <li>Automated cleanup of IAM resources (keys, MFA, policies), enforcing end-to-end safety constraints.</li>
+            <li>Added CI/CD pipelines and integration test harnesses to validate scenarios at scale.</li>
           </ul>
         </div>
       </div>
@@ -59,8 +60,8 @@ export default function Experience() {
             <h2>University of Michigan</h2>
             <p><em>NLP Researcher and AI Software Developer | Ann Arbor, MI | Nov 2024 - Present</em></p>
             <ul className="indented-list">
-              <li>Conduct research on text summarization, evaluating different LLMs using human methods</li>
-              <li>Build web crawlers to benchmark a UMich-developed bot across diverse datasets and automate data preprocessing workflows</li>
+              <li>Evaluated LLM summarization on 6 datasets across politics/psych/society using 18 model–prompt configs; benchmarked using ROUGE-L, BERTScore, and human evaluation (𝜅 = 0.76).</li>
+              <li>Built a high-throughput crawler and ETL pipeline that automated data ingestion and versioning, reducing setup time and enabling rapid experimentation.</li>
             </ul>
           </div>
         </div>
@@ -74,9 +75,9 @@ export default function Experience() {
             <h2>Akima</h2>
             <p><em>Software Engineering Intern | Herndon, VA | Jun - Aug 2024</em></p>
             <ul className="indented-list">
-              <li>Led a team of 7 as Scrum Master to engineer a web-based Air Force E911 dispatch software system from scratch for 179 bases using AWS, React, Spring Boot, and Tableau, processing over 300 support tickets</li>
-              <li>Implemented MySQL database and utilized Python scripting to manage and track bases and tickets, automating updates</li>
-              <li>Presented to over 50 stakeholders, including the CEO, group presidents, and military teams, showcasing the functional MVP</li>
+              <li>Led a 4-person team to deliver an Air Force E911 system (React, Spring Boot, AWS) supporting 179 bases worldwide.</li>
+              <li>Designed MySQL schema and Python automation for live geolocation and status propagation; migrated legacy data with full integrity checks.</li>
+              <li>Presented MVP and system architecture to 50+ stakeholders including executives and military personnel.</li>
             </ul>
           </div>
         </div>
@@ -90,9 +91,8 @@ export default function Experience() {
             <h2>Center for Academic Innovation at UofM</h2>
             <p><em>XR Researcher | Ann Arbor, MI | Oct 2024 - May 2024</em></p>
             <ul className="indented-list">
-              <li>Implemented audio functionalities for vocal interaction with virtual patients in a VR application using Google Cloud Speech API, Unreal Engine, and C++, capturing and processing auction input with optimized settings</li>
-              <li>Collaborated with medical experts and professors to lead iterative user testing sessions and drive continuous design improvements</li>
-              <li>Oversaw financial and HR operations for the XR program, managing 32 projects and optimizing performance across 17 schools</li>
+              <li>Implemented real-time voice interaction features using Unreal/C++ and Google Cloud Speech, achieving 𝑝95 latency ≤ 170 ms and reducing clinical-phrase WER from 11% to 8.6%.</li>
+              <li>Optimized the audio pipeline (VAD, buffering, threading) to sustain 60 FPS during interaction with ≤ 1 dropped frame per 10 min in testing.</li>
             </ul>
           </div>
         </div>
@@ -106,8 +106,8 @@ export default function Experience() {
             <h2>Academic Success Partners</h2>
             <p><em>Private Tutor | Ann Arbor, MI | Apr 2023 - Aug 2024</em></p>
             <ul className="indented-list">
-              <li>Provided personalized tutoring to high school students in Ann Arbor for STEM subjects including Calculus AB/BC, Geometry, Algebra I-II, Chemistry, and SAT preparation</li>
-              <li>Fostered a supportive and engaging learning environment, building strong rapport with students and achieving measurable academic improvements</li>
+              <li>Provided personalized tutoring to high school students in Ann Arbor for STEM subjects including Calculus AB/BC, Geometry, Algebra I-II, Chemistry, and SAT preparation.</li>
+              <li>Fostered a supportive and engaging learning environment, building strong rapport with students and achieving measurable academic improvements.</li>
             </ul>
           </div>
         </div>
