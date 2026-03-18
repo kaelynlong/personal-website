@@ -18,7 +18,7 @@ export default function Projects() {
           <i>Source code is private; contact kaelynl@umich.edu for access or inquiries.</i>
         </>
       ),
-      tags: ["C++", "OS"]
+      tags: ["C++", "Concurrency", "OS"]
     },
     {
       name: "Virtual Memory Pager",
@@ -30,7 +30,19 @@ export default function Projects() {
           <i>Source code is private; contact kaelynl@umich.edu for access or inquiries.</i>
         </>
       ),
-      tags: ["C++", "OS"]
+      tags: ["C++", "OS", "Systems"]
+    },
+    {
+      name: "Network File Server",
+      shortDesc: "Multi-threaded TCP file server with concurrent client handling, synchronized caching, and optimized I/O paths.",
+      longDesc: (
+        <>
+          Implemented a multi-threaded TCP file server in C++ that supports concurrent client sessions through a custom application-layer protocol. Designed synchronized caching and optimized I/O paths to improve throughput and reduce latency under parallel request workloads, while maintaining correctness across simultaneous accesses.<br />
+          <br />
+          <i>Source code is private; contact kaelynl@umich.edu for access or inquiries.</i>
+        </>
+      ),
+      tags: ["C++", "Systems", "Networking"]
     },
     {
       name: "Instagram Clone",
@@ -42,7 +54,43 @@ export default function Projects() {
           <i>Source code is private; contact kaelynl@umich.edu for access or inquiries.</i>
         </>
       ),
-      tags: ["Python", "React", "SQLite", "AWS"]
+      tags: ["Python", "Flask", "AWS", "Full Stack"]
+    },
+    {
+      name: "Fakebook Database",
+      shortDesc: "Relational social media database with ER modeling, schema design, SQL DDL/DML, and external views.",
+      longDesc: (
+        <>
+          Designed and implemented a relational database for a social media platform modeled after Facebook. Built an ER diagram and translated the specification into normalized Oracle SQL tables with primary keys, foreign keys, triggers, sequences, constraints, and external views. Loaded and transformed data from a public dataset while preserving schema requirements and enforcing application-specific integrity rules.<br />
+          <br />
+          <i>Source code is private; contact kaelynl@umich.edu for access or inquiries.</i>
+        </>
+      ),
+      tags: ["SQL", "Oracle", "Databases", "Data Modeling"]
+    },
+    {
+      name: "Fakebook JDBC",
+      shortDesc: "Java JDBC application executing optimized SQL queries over a relational social network dataset.",
+      longDesc: (
+        <>
+          Built a Java application using JDBC to execute and process complex SQL queries against a relational social network database. Implemented query logic for analytics tasks involving joins, aggregation, ranking, mutual relationships, event analysis, and friend recommendation, with attention to both correctness and runtime performance on public and private datasets.<br />
+          <br />
+          <i>Source code is private; contact kaelynl@umich.edu for access or inquiries.</i>
+        </>
+      ),
+      tags: ["Java", "JDBC", "SQL", "Databases"]
+    },
+    {
+      name: "Fakebook MongoDB",
+      shortDesc: "Oracle-to-JSON export pipeline and MongoDB analytics over nested social network documents.",
+      longDesc: (
+        <>
+          Exported relational social network data from Oracle into normalized JSON documents and imported the result into MongoDB for document-oriented querying. Implemented MongoDB queries using collection transformations, aggregation pipelines, and nested document access to analyze friendships, locations, and birth-month distributions across the dataset.<br />
+          <br />
+          <i>Source code is private; contact kaelynl@umich.edu for access or inquiries.</i>
+        </>
+      ),
+      tags: ["MongoDB", "NoSQL", "Aggregation", "Data Modeling"]
     },
     {
       name: "Wikipedia Search Engine and Custom MapReduce Server",
@@ -54,7 +102,7 @@ export default function Projects() {
           <i>Source code is private; contact kaelynl@umich.edu for access or inquiries.</i>
         </>
       ),
-      tags: ["Python", "React", "Hadoop", "AWS"]
+      tags: ["Python", "Distributed Systems", "Hadoop", "Search"]
     },
     {
       name: "LC-2K",
@@ -66,7 +114,7 @@ export default function Projects() {
           <i>Source code is private; contact kaelynl@umich.edu for access or inquiries.</i>
         </>
       ),
-      tags: ["C"]
+      tags: ["C", "Computer Architecture", "Systems"]
     },
     {
       name: "DSA Class Projects",
@@ -82,13 +130,13 @@ export default function Projects() {
           <i>Source code is private; contact kaelynl@umich.edu for access or inquiries.</i>
         </>
       ),
-      tags: ["C++"]
+      tags: ["C++", "Algorithms", "Data Structures"]
     },
     {
       name: "Personal Website",
       shortDesc: "Personal portfolio showcasing projects, skills, and experience.",
       longDesc: "You're viewing it! Designed and built from scratch to highlight professional experience, projects, and skills while incorporating animations and interactive elements. Features accessibility optimizations to enhance user experience, including keyboard navigation, reduced motion support, and a fully responsive design.",
-      tags: ["Next.js", "CSS"],
+      tags: ["Next.js", "React", "Web Development"],
     },
     { name: "View All", shortDesc: "Explore more projects on GitHub" },
   ];

@@ -36,13 +36,7 @@ export default function About() {
     <div id="about" className="about-section">
       <h1>ABOUT</h1>
       <p className={`about-description ${visibleSections.includes("0") ? "fade-in" : ""}`}>
-        I’m Kaelyn, a senior at the University of Michigan’s College of Engineering studying Computer Science with a minor in UX Design. I’m passionate about bringing design and technology together to create solutions that are both impactful and human-centered.
-      </p>
-      <p className={`about-description ${visibleSections.includes("1") ? "fade-in" : ""}`}>
-        My experience ranges from software engineering internships and AI/ML research to leadership roles in student organizations, all with a focus on building products that are intuitive and effective.
-      </p>
-      <p className={`about-description ${visibleSections.includes("2") ? "fade-in" : ""}`}>
-        In my free time, I like exploring fashion, painting, and reading—creative outlets that keep me curious and inspired.
+       I’m Kaelyn, a senior at the University of Michigan studying Computer Science. My background includes full-stack development, backend systems, and applied research, and I’m especially interested in scalable infrastructure and high-performance software. In my free time, I enjoy exploring fashion, painting, and reading.
       </p>
     </div>
   );

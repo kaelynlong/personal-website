@@ -18,7 +18,7 @@ export default function Navbar() {
         <>
             {/* Announcement Bar */}
             <div className="announcement-bar">
-                ˚ ༘♡ ⋆｡˚ Last updated Sep 2025 ˚୨୧⋆｡˚ ⋆
+                ˚ ༘♡ ⋆｡˚ Last updated Mar 2026 ˚୨୧⋆｡˚ ⋆
             </div>
 
             {/* Navbar */}
