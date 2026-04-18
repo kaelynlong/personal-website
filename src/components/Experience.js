@@ -11,21 +11,21 @@ export default function Experience() {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            const index = entry.target.getAttribute("data-index");
-            setTimeout(() => {
-              setVisibleSections((prev) => [...new Set([...prev, index])]);
-            }, index * 50);
+            const totalItems = 6;
+            for (let i = 0; i < totalItems; i++) {
+              setTimeout(() => {
+                setVisibleSections((prev) => [...new Set([...prev, String(i)])]);
+              }, i * 150);
+            }
+            observer.disconnect();
           }
         });
       },
       { threshold: 0.1 }
     );
 
-    const items = document.querySelectorAll(".experience-timeline-item, .experience-section h1");
-    items.forEach((item, index) => {
-      item.setAttribute("data-index", index);
-      observer.observe(item);
-    });
+    const heading = document.querySelector(".experience-section h1");
+    if (heading) observer.observe(heading);
 
     return () => observer.disconnect();
   }, []);
@@ -35,7 +35,7 @@ export default function Experience() {
       <h1 className={`fade-item ${visibleSections.includes("0") ? "fade-in" : ""}`}>EXPERIENCE</h1>
       <div className="timeline">
       <div
-        className={`experience-timeline-item ${visibleSections.includes("2") ? "fade-in" : ""}`}
+        className={`experience-timeline-item ${visibleSections.includes("1") ? "fade-in" : ""}`}
       >
         <div className="timeline-dot"></div>
         <div className="timeline-connector"></div>
@@ -43,13 +43,14 @@ export default function Experience() {
           <h2>Amazon</h2>
           <p><em>Software Development Engineer Intern | Seattle, WA | May - Aug 2025</em></p>
           <ul className="indented-list">
-            <li>Built and deployed a Java-based CloudFormation Hook on AWS Lambda to enforce safe IAM deletion workflows, reducing
-            review time by 80% and lowering security risk from invalid deletions.</li>
-            <li>Engineered a fault-tolerant evaluation pipeline with retry/backoff, structured logging, and automated failure handling to maintain
-            reliability under API throttling and high request volume.</li>
-            <li>Automated cleanup of IAM resources including access keys, MFA devices, and policies while enforcing safety constraints across
-            dependent resources.</li>
-            <li>Developed CI/CD pipelines and integration tests to validate end-to-end correctness across deletion and rollback scenarios.</li>
+            <li>Reduced IAM deletion review time by 80% by designing and deploying a Java-based CloudFormation Hook on AWS Lambda,
+            collaborating with the IAM security team to formalize deletion safety policies adopted across internal teams.</li>
+            <li>Built fault-tolerant evaluation logic with exponential backoff, structured logging, and automated failure recovery to maintain
+            pipeline reliability under API throttling and high request volume.</li>
+            <li>Designed the Hook's IAM/EC2 boundary resolution layer to handle concurrent resource propagation, with DynamoDB-backed
+            caching reducing redundant API calls by 70% and enabling consistent policy enforcement at scale.</li>
+            <li>Implemented a CloudWatch observability layer with custom metrics, latency dashboards, and automated alarms to monitor
+            Hook invocations and failure rates in production across multiple accounts.</li>
           </ul>
         </div>
       </div>
@@ -63,10 +64,12 @@ export default function Experience() {
             <h2>University of Michigan</h2>
             <p><em>NLP Researcher and AI Software Developer | Ann Arbor, MI | Nov 2024 - Present</em></p>
             <ul className="indented-list">
-              <li>Evaluated LLM summarization performance across 6 datasets and 18 model-prompt configurations using ROUGE-L, BERTScore,
-              and human evaluation, achieving inter-rater agreement of 𝜅 = 0.76.</li>
-              <li>Built a high-throughput crawler and ETL pipeline for dataset ingestion, preprocessing, and versioning, automating experiment
-              setup across multiple summarization datasets and reducing manual preparation time.</li>
+              <li>Built a scalable ETL pipeline with automated ingestion, preprocessing, and versioning for 10K+ documents across 18 model-prompt
+              configurations, reducing experiment setup time by over 50%.</li>
+              <li>Deployed a vector-indexed retrieval system (FAISS) over processed corpora to support RAG-based summarization, improving
+              ROUGE-L from 0.34 to 0.38 on XSum using LLaMA-2 with retrieval-augmented prompting.</li>
+              <li>Developed a FastAPI model-serving layer supporting on-demand inference across 3 LLM families (GPT, LLaMA, Mistral), with
+              batched request handling and structured logging for reproducible benchmark evaluation.</li>
             </ul>
           </div>
         </div>
@@ -80,10 +83,12 @@ export default function Experience() {
             <h2>Akima</h2>
             <p><em>Software Engineering Intern | Herndon, VA | Jun - Aug 2024</em></p>
             <ul className="indented-list">
-              <li>Led a 4-person team building an Air Force E911 dispatch system using React, Spring Boot, AWS, and MySQL to support
-              emergency operations across 179 military bases.</li>
-              <li>Designed the relational schema and backend data pipeline for live geolocation and status propagation, including migration logic
-              and integrity checks for legacy records.</li>
+              <li>Led a 4-person team building an Air Force E911 dispatch system serving 179 military bases, achieving sub-200ms end-to-end
+              delivery for real-time emergency coordination.</li>
+              <li>Designed an event-driven WebSocket architecture with geofenced routing, priority queuing, and live state synchronization,
+              enabling dispatchers to receive streaming incident updates without polling.</li>
+              <li>Built an automated legacy-data migration pipeline processing 20K+ records with referential integrity validation, achieving
+              zero-downtime cutover across all 179 bases.</li>
             </ul>
           </div>
         </div>

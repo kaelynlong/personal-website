@@ -12,7 +12,7 @@ export default function Footer() {
           </li>
         </ul>
         <div className="footer-copyright">
-          © 2025 KAELYN LONG
+          © 2026 KAELYN LONG
         </div>
       </div>
     </footer>
